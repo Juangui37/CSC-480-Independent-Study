@@ -1,5 +1,5 @@
 # CSC-480-Independent-Study
- # Using Data Science in House Buying Decisions
+# Using Data Science in House Buying Decisions
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
