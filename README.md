@@ -2,7 +2,7 @@
 # Using Data Science in House Buying Decisions
 
 ## Introduction
-For someone, like myself, who just recently became an unexpected father,looking into buying a home can be a daunting thing to think about. The housing market is already complex and difficult to navigate, especially for first-time homebuyers. This project aims to use data science to make informed decisions when buying a house. The overall objective of this project is to hone and improve my data related skills to prepare for my upcoming internship, while also learning insights and information about the housing market.
+Looking into buying a home can be a daunting thing to think about, he housing market is already complex and difficult to navigate, especially for first-time homebuyers. This project aims to use data science to make informed decisions when buying a house. The overall objective of this project is to hone and improve my data related skills to prepare for my upcoming internship, while also learning insights and information about the housing market 😄.
 
 ## Project Details
 
