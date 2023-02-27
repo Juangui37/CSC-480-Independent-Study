@@ -1,4 +1,7 @@
-# 2/27/23
+# CSC 480 Lab Notebook/Journal
+
+
+## 2/27/23
 
 Today, I went through some of Dr. Dancik's videos from his CSC-301-01 Adv Web Develop & Scraping class.
 
