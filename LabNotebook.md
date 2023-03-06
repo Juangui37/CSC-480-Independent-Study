@@ -25,13 +25,18 @@ This video shows how to install selenium onto a desired web browser and then it 
 
 Today, I continued trying to webscrape Zillow's website but, kept getting blocked because Zillow new I was using a bot. 
 
-Since, I have little understanding and an interest to scrape data and this part of the project has really taking up time, I have opted for some help from the subreddit: /datasets I created a post[https://www.reddit.com/r/datasets/comments/11hq8tf/webscraping_specific_zip_code_data_from_zillow/] on this subreddit asking for help. I also searched the subreddit to see if anyone had done anything like this. It turns out, this is a common practice. I reached out to a reddit user who did a project similiar to mine and I reached out to him. 
+After a couple of hours of trying to understand the concepts of webscraping I realized a couple of things:
+1. I have a minimal understanding to webscrapping and itll probably take me a while to get comfortable with this
+2. I have no real interest in scrapping data and I probably won't do this ever again because API's are a thing
+3. #his part of the project has taken up a lot of time
 
-after about a day, he got backed to me and shared his github repisotory with me where he created a scraper using scappy.
+After this realizations, I opted for some help from the subreddit: /datasets [I posted on this subreddit asking for help.](https://www.reddit.com/r/datasets/comments/11hq8tf/webscraping_specific_zip_code_data_from_zillow/)  I also searched the subreddit to see if anyone had done anything like this. It turns out, this is a common practice. [I reached out to a reddit user who did a project similiar to mine.](https://www.reddit.com/r/datasets/comments/ug1by8/is_it_legal_to_make_an_open_source_github_repo/) I asked him if he was willing to share his github repository.
+
+After a day, he got backed to me and shared his github repisotory. He created the zillow scraper using scappy.
 
 ##3/06/2023
 
-I took the time to follow the steps to initialize this project which are:
+I took the time to follow the steps to initialize the project from Radlinsky's repisotory.
 
 1. Install environment
 mamba env create --name house_conda_env --file=configs/house_conda_env.yaml --force
@@ -43,4 +48,19 @@ Update the scrapfly key in configs/config.yaml. See scrapfly.io for info.
 02_Wrangle.ipynb (reads in all the jsons and combines them into a dataframe)
 03_Explore.ipynb (plots/maps of the data)
 
+These steps might sound and seem pretty self explanitory but, again I have little to no actual expierence using my macbook's terminal so I asked ChatGPT a ton of questions like:
+
+- "Hi ChatGPT, what does this code mean:
+
+Install environment
+mamba env create --name house_conda_env --file=configs/house_conda_env.yaml --force
+Launch R, then run IRkernel::installspec(name = 'house_r', displayname = 'R House')"
+
+- "can you tell me very descriptively how i follow these steps?"
+
+- "Can you tell me what this line of code means and what I’d have to do to run this on my terminal? I have mamba installed
+
+mamba env create --name house_conda_env --file=configs/house_conda_env.yaml --force"
+
+I evantually got Mamaba installed and realized that I needed to fork Radlinksy's repistory on my local computer and change the directory the code, '--file=configs/house_conda_en.yaml' to something that directs the terminal to the repisorty where I stored the forked redlinsky repo.
 
