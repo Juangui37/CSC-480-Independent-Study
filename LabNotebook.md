@@ -34,7 +34,7 @@ After this realizations, I opted for some help from the subreddit: /datasets [I 
 
 After a day, he got backed to me and shared his github repisotory. He created the zillow scraper using scappy.
 
-##3/06/2023
+## 3/06/2023
 
 I took the time to follow the steps to initialize the project from Radlinsky's repisotory.
 
@@ -64,3 +64,29 @@ mamba env create --name house_conda_env --file=configs/house_conda_env.yaml --fo
 
 I evantually got Mamaba installed and realized that I needed to fork Radlinksy's repistory on my local computer and change the directory the code, '--file=configs/house_conda_en.yaml' to something that directs the terminal to the repisorty where I stored the forked redlinsky repo.
 
+## 03/20/2023
+
+I continued trying to gather data for my project in the least technical way possible.
+
+I researched the who the best realtor companies in connecticut are from https://realestate.usnews.com/agents/connecticut/hartford/ and began to mass send this email:
+
+"Hello!
+
+My name is Juan Villegas, a senior in my last semester at Eastern Connecticut State University studying data science.
+I’m reaching out to you because I’m doing a senior research project for my university, where I’m using data science to find insights and make data-driven decisions for buying a house. My project involves creating two data science models: Classification and predictive.
+
+The classification model would show attributes associated to a budget of $250,000. For example, I might use a CART or random forest model that would indicate that the attributes most associated with that budget are: 3 bedrooms, 2 bathrooms, and the house type being colonial.
+
+The predictive model would output the potential cost of a house given the attributes I feed the model. For example, if I give the model the town, number of beds, walk score, and lot size, it would provide an output based on those attributes and the data it’s learning from.
+
+I need help getting the data for my project so that the insights correspond to the area of interest. I hope to gather data on sold and/or listed houses within 15 miles of the zip code ‘06183’.
+
+After researching, I’m left with two options: web-scraping or asking a realtor for help/guidance. Of course, I’ve begun trying to web-scrape data from Zillow, Redfin, and realtor.com, but these sites have made it incredibly difficult to extract this valuable data.
+Can you help me get or point me in the right direction to someone who can help me get a good sample of this type of data? 
+
+Thanks,
+Juan Villegas"
+
+I reached out to a total of 10 companies and 4 indivudal realtors that I personally know. I'm hoping that at least 1 of these 14 options has something for me.
+
+If not, Dr. Dancik has sent me code to create fake data for my project so that I can begin getting some practice with MongoDB & MySQL
