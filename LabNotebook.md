@@ -90,3 +90,19 @@ Juan Villegas"
 I reached out to a total of 10 companies and 4 indivudal realtors that I personally know. I'm hoping that at least 1 of these 14 options has something for me.
 
 If not, Dr. Dancik has sent me code to create fake data for my project so that I can begin getting some practice with MongoDB & MySQL
+
+
+## 03/22/2023
+
+Great news! After reaching out to a couple of realtors, one finally got back to me and shared the housing data that im looking for... kinda. The realtor gave me about 2,000 records of housing data within a 15 mile radius of the zip code 06183 for both listed and sold homes but, it was specified for single family homes with 3 bed rooms and 2 batherooms. 
+
+I reached back out to the realtor hoping I could recieve a less limited data set.
+
+Other than the good news of recieving data, I have begun learning about MongoDB. At first, I watched some youtube tutorials, looked up regular written tutorials and evantually ended up on mongoDB's website where I enrolled in a 12 hour mongoDB course for beginners.
+
+These are the resources I use are:
+-  https://www.youtube.com/watch?v=7jH__3ieGS0
+- https://www.tutorialspoint.com/mongodb/mongodb_environment.htm
+
+The course I enrolled in is:
+![Capture](https://user-images.githubusercontent.com/76864633/226918553-d06b9fbd-f294-4749-ba38-660e599feb00.PNG)
