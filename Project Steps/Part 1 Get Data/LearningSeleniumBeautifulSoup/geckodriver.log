@@ -1,0 +1,936 @@
+1678335117427	geckodriver	INFO	Listening on 127.0.0.1:49960
+1678335117950	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "49961" "--r ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fg/20qjr3zj73q_m0k3qy44x0n00000gn/T/rust_mozprofileW7EqQe"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1   HIToolbox                           0x00007ff811032726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff8110322b8 _ZN15MenuBarInstance14EnableAutoShowEv + 52
+3   HIToolbox                           0x00007ff810fd6908 SetMenuBarObscured + 408
+4   HIToolbox                           0x00007ff810fd64ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+5   HIToolbox                           0x00007ff810fd0996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+6   HIToolbox                           0x00007ff810f98bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff810fd03e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff810fbf3ec ReceiveNextEventCommon + 285
+9   HIToolbox                           0x00007ff810fbf2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff80a7c22f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff80a7c1174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x0000000112be2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  XUL                                 0x0000000112be3d1a _ZN14nsXPTCStubBase7Stub249Ev + 12296954
+14  XUL                                 0x0000000112be44bc _ZN14nsXPTCStubBase7Stub249Ev + 12298908
+15  XUL                                 0x000000011201210b NS_NewLocalFileWithFSRef + 256523
+16  XUL                                 0x0000000112018457 NS_NewLocalFileWithFSRef + 281943
+17  XUL                                 0x0000000111a97d8e NS_InvokeByIndex + 142
+18  XUL                                 0x0000000112326196 _ZN14nsXPTCStubBase7Stub249Ev + 3131254
+19  XUL                                 0x0000000112328181 _ZN14nsXPTCStubBase7Stub249Ev + 3139425
+20  XUL                                 0x00000001130bdf0d XRE_GetBootstrap + 288541
+21  XUL                                 0x00000001130c966a XRE_GetBootstrap + 335482
+22  XUL                                 0x00000001134ea44e XRE_GetBootstrap + 4664414
+23  ???                                 0x00003561f6f45d05 0x0 + 58694871309573
+24  ???                                 0x00003561f6f4f4cc 0x0 + 58694871348428
+25  ???                                 0x00003561f6f454ee 0x0 + 58694871307502
+26  XUL                                 0x00000001134ccccf XRE_GetBootstrap + 4543711
+27  XUL                                 0x00000001130b12f3 XRE_GetBootstrap + 236291
+28  XUL                                 0x00000001130c966a XRE_GetBootstrap + 335482
+29  XUL                                 0x000000011317d344 XRE_GetBootstrap + 1071956
+30  XUL                                 0x00000001130bdf0d XRE_GetBootstrap + 288541
+31  XUL                                 0x00000001130c966a XRE_GetBootstrap + 335482
+32  XUL                                 0x0000000113133395 XRE_GetBootstrap + 768933
+33  XUL                                 0x00000001123206f9 _ZN14nsXPTCStubBase7Stub249Ev + 3108057
+34  XUL                                 0x0000000112029b6a _ZN14nsXPTCStubBase7Stub249Ev + 330
+35  XUL                                 0x0000000112028abb NS_NewLocalFileWithFSRef + 349115
+36  XUL                                 0x0000000116a7da98 workerlz4_decompress + 973304
+37  XUL                                 0x00000001130760c4 workerlz4_maxCompressedSize + 445156
+38  XUL                                 0x0000000116a7905c workerlz4_decompress + 954300
+39  XUL                                 0x0000000116a7947c workerlz4_decompress + 955356
+40  firefox-bin                         0x0000000101126fe5 firefox-bin + 8165
+41  dyld                                0x00007ff807265310 start + 2432
+1678335118774	Marionette	INFO	Marionette enabled
+1678335118940	Marionette	INFO	Listening on port 49968
+Read port: 49968
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+WebDriver BiDi listening on ws://127.0.0.1:49961
+1678335119645	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fg/20qjr3zj73q_m0k3qy44x0n00000gn/T/rust_mozprofileW7EqQe/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49961/devtools/browser/a0f7cc82-76e8-403c-9872-88828b9a77be
+1   HIToolbox                           0x00007ff810fbf0c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff810fd67e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff810fdd29e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff810fd6622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff810fd0950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff810f98bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff810fd03e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff810fbf5a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff810fbf2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff80a7c22f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff80a7c1174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x0000000112be2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff80a7b37b7 -[NSApplication run] + 586
+14  XUL                                 0x0000000112be3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x00000001169f504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000113076459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x0000000116a7905c workerlz4_decompress + 954300
+18  XUL                                 0x0000000116a7947c workerlz4_decompress + 955356
+19  firefox-bin                         0x0000000101126fe5 firefox-bin + 8165
+20  dyld                                0x00007ff807265310 start + 2432
+1678335191073	geckodriver	INFO	Listening on 127.0.0.1:50161
+1678335191587	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50162" "--r ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fg/20qjr3zj73q_m0k3qy44x0n00000gn/T/rust_mozprofileumqWdM"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1   HIToolbox                           0x00007ff811032726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff8110322b8 _ZN15MenuBarInstance14EnableAutoShowEv + 52
+3   HIToolbox                           0x00007ff810fd6908 SetMenuBarObscured + 408
+4   HIToolbox                           0x00007ff810fd64ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+5   HIToolbox                           0x00007ff810fd0996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+6   HIToolbox                           0x00007ff810f98bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff810fd03e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff810fbf3ec ReceiveNextEventCommon + 285
+9   HIToolbox                           0x00007ff810fbf2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff80a7c22f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff80a7c1174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x00000001176e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  XUL                                 0x00000001176e3d1a _ZN14nsXPTCStubBase7Stub249Ev + 12296954
+14  XUL                                 0x00000001176e44bc _ZN14nsXPTCStubBase7Stub249Ev + 12298908
+15  XUL                                 0x0000000116b1210b NS_NewLocalFileWithFSRef + 256523
+16  XUL                                 0x0000000116b18457 NS_NewLocalFileWithFSRef + 281943
+17  XUL                                 0x0000000116597d8e NS_InvokeByIndex + 142
+18  XUL                                 0x0000000116e26196 _ZN14nsXPTCStubBase7Stub249Ev + 3131254
+19  XUL                                 0x0000000116e28181 _ZN14nsXPTCStubBase7Stub249Ev + 3139425
+20  XUL                                 0x0000000117bbdf0d XRE_GetBootstrap + 288541
+21  XUL                                 0x0000000117bc8d5a XRE_GetBootstrap + 333162
+22  XUL                                 0x0000000117fc4b8b XRE_GetBootstrap + 4510619
+23  ???                                 0x0000189dc2d32da9 0x0 + 27065857551785
+24  ???                                 0x0000189dc2d3a4cc 0x0 + 27065857582284
+25  ???                                 0x0000189dc2d304ee 0x0 + 27065857541358
+26  XUL                                 0x0000000117fccccf XRE_GetBootstrap + 4543711
+27  XUL                                 0x0000000117bb12f3 XRE_GetBootstrap + 236291
+28  XUL                                 0x0000000117bc966a XRE_GetBootstrap + 335482
+29  XUL                                 0x0000000117c7d344 XRE_GetBootstrap + 1071956
+30  XUL                                 0x0000000117bbdf0d XRE_GetBootstrap + 288541
+31  XUL                                 0x0000000117bc966a XRE_GetBootstrap + 335482
+32  XUL                                 0x0000000117c33395 XRE_GetBootstrap + 768933
+33  XUL                                 0x0000000116e206f9 _ZN14nsXPTCStubBase7Stub249Ev + 3108057
+34  XUL                                 0x0000000116b29b6a _ZN14nsXPTCStubBase7Stub249Ev + 330
+35  XUL                                 0x0000000116b28abb NS_NewLocalFileWithFSRef + 349115
+36  XUL                                 0x000000011b57da98 workerlz4_decompress + 973304
+37  XUL                                 0x0000000117b760c4 workerlz4_maxCompressedSize + 445156
+38  XUL                                 0x000000011b57905c workerlz4_decompress + 954300
+39  XUL                                 0x000000011b57947c workerlz4_decompress + 955356
+40  firefox-bin                         0x0000000105c54fe5 firefox-bin + 8165
+41  dyld                                0x00007ff807265310 start + 2432
+1678335192590	Marionette	INFO	Marionette enabled
+1678335192712	Marionette	INFO	Listening on port 50169
+Read port: 50169
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+WebDriver BiDi listening on ws://127.0.0.1:50162
+1678335193220	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fg/20qjr3zj73q_m0k3qy44x0n00000gn/T/rust_mozprofileumqWdM/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50162/devtools/browser/1781df79-5e2a-44a4-ae32-03e5110ff986
+1678335201740	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335201755	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335201768	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335201789	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335201857	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335201865	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335201872	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335201880	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335201885	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335201892	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 603))
+1   HIToolbox                           0x00007ff810fbf0c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff810fd67e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff810fdd29e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff810fd6622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff810fd0950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff810f98bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff810fd03e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff810fbf5a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff810fbf2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff80a7c22f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff80a7c1174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x00000001176e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff80a7b37b7 -[NSApplication run] + 586
+14  XUL                                 0x00000001176e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011b4f504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000117b76459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011b57905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011b57947c workerlz4_decompress + 955356
+19  firefox-bin                         0x0000000105c54fe5 firefox-bin + 8165
+20  dyld                                0x00007ff807265310 start + 2432
+1   HIToolbox                           0x00007ff811032726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff810fd6852 SetMenuBarObscured + 226
+3   HIToolbox                           0x00007ff810fd64ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+4   HIToolbox                           0x00007ff810fd0996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+5   HIToolbox                           0x00007ff810f98bd2 _NotifyEventLoopObservers + 153
+6   AppKit                              0x00007ff80a9b0f73 -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:] + 3212
+7   AppKit                              0x00007ff80a92758e -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:] + 2595
+8   AppKit                              0x00007ff80a92694f -[NSWindow(NSEventRouting) sendEvent:] + 345
+9   XUL                                 0x000000011a85b4b5 mozilla_set_coreaudio_notification_runloop_if_needed + 6400437
+10  AppKit                              0x00007ff80a924cbe -[NSApplication(NSEvent) sendEvent:] + 358
+11  XUL                                 0x00000001176e2f2c _ZN14nsXPTCStubBase7Stub249Ev + 12293388
+12  AppKit                              0x00007ff80abe3665 -[NSApplication _handleEvent:] + 65
+13  AppKit                              0x00007ff80a7b37dc -[NSApplication run] + 623
+14  XUL                                 0x00000001176e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011b4f504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000117b76459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011b57905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011b57947c workerlz4_decompress + 955356
+19  firefox-bin                         0x0000000105c54fe5 firefox-bin + 8165
+20  dyld                                0x00007ff807265310 start + 2432
+1678335227460	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335227467	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335227475	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335227482	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335227488	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335227493	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335227500	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335227508	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335227513	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335227518	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335240230	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335240245	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335240254	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335240263	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335240283	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335240291	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335240302	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335240313	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335240322	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335240334	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1   HIToolbox                           0x00007ff810fbf0c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff810fd67e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff810fdd29e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff810fd6622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff810fd0950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff810f98bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff810fd03e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff810fbf5a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff810fbf2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff80a7c22f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff80a7c1174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x00000001176e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff80a7b37b7 -[NSApplication run] + 586
+14  XUL                                 0x00000001176e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011b4f504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000117b76459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011b57905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011b57947c workerlz4_decompress + 955356
+19  firefox-bin                         0x0000000105c54fe5 firefox-bin + 8165
+20  dyld                                0x00007ff807265310 start + 2432
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1678335292944	geckodriver	INFO	Listening on 127.0.0.1:50394
+1678335293463	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50395" "--r ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fg/20qjr3zj73q_m0k3qy44x0n00000gn/T/rust_mozprofileod5c5r"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1   HIToolbox                           0x00007ff811032726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff8110322b8 _ZN15MenuBarInstance14EnableAutoShowEv + 52
+3   HIToolbox                           0x00007ff810fd6908 SetMenuBarObscured + 408
+4   HIToolbox                           0x00007ff810fd64ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+5   HIToolbox                           0x00007ff810fd0996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+6   HIToolbox                           0x00007ff810f98bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff810fd03e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff810fbf3ec ReceiveNextEventCommon + 285
+9   HIToolbox                           0x00007ff810fbf2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff80a7c22f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff80a7c1174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x00000001182e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  XUL                                 0x00000001182e3d1a _ZN14nsXPTCStubBase7Stub249Ev + 12296954
+14  XUL                                 0x00000001182e44bc _ZN14nsXPTCStubBase7Stub249Ev + 12298908
+15  XUL                                 0x000000011771210b NS_NewLocalFileWithFSRef + 256523
+16  XUL                                 0x0000000117718457 NS_NewLocalFileWithFSRef + 281943
+17  XUL                                 0x0000000117197d8e NS_InvokeByIndex + 142
+18  XUL                                 0x0000000117a26196 _ZN14nsXPTCStubBase7Stub249Ev + 3131254
+19  XUL                                 0x0000000117a28181 _ZN14nsXPTCStubBase7Stub249Ev + 3139425
+20  XUL                                 0x00000001187bdf0d XRE_GetBootstrap + 288541
+21  XUL                                 0x00000001187c8d5a XRE_GetBootstrap + 333162
+22  XUL                                 0x0000000118bc4b8b XRE_GetBootstrap + 4510619
+23  ???                                 0x00001c13443f8da9 0x0 + 30869074972073
+24  ???                                 0x00001c13444004cc 0x0 + 30869075002572
+25  ???                                 0x00001c13443f64ee 0x0 + 30869074961646
+26  XUL                                 0x0000000118bccccf XRE_GetBootstrap + 4543711
+27  XUL                                 0x00000001187b12f3 XRE_GetBootstrap + 236291
+28  XUL                                 0x00000001187c966a XRE_GetBootstrap + 335482
+29  XUL                                 0x000000011887d344 XRE_GetBootstrap + 1071956
+30  XUL                                 0x00000001187bdf0d XRE_GetBootstrap + 288541
+31  XUL                                 0x00000001187c966a XRE_GetBootstrap + 335482
+32  XUL                                 0x0000000118833395 XRE_GetBootstrap + 768933
+33  XUL                                 0x0000000117a206f9 _ZN14nsXPTCStubBase7Stub249Ev + 3108057
+34  XUL                                 0x0000000117729b6a _ZN14nsXPTCStubBase7Stub249Ev + 330
+35  XUL                                 0x0000000117728abb NS_NewLocalFileWithFSRef + 349115
+36  XUL                                 0x000000011c17da98 workerlz4_decompress + 973304
+37  XUL                                 0x00000001187760c4 workerlz4_maxCompressedSize + 445156
+38  XUL                                 0x000000011c17905c workerlz4_decompress + 954300
+39  XUL                                 0x000000011c17947c workerlz4_decompress + 955356
+40  firefox-bin                         0x000000010688ffe5 firefox-bin + 8165
+41  dyld                                0x00007ff807265310 start + 2432
+1678335294288	Marionette	INFO	Marionette enabled
+1678335294658	Marionette	INFO	Listening on port 50402
+Read port: 50402
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+WebDriver BiDi listening on ws://127.0.0.1:50395
+1678335294819	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fg/20qjr3zj73q_m0k3qy44x0n00000gn/T/rust_mozprofileod5c5r/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50395/devtools/browser/8996958d-8322-49c0-b88b-e6c046457f26
+1   HIToolbox                           0x00007ff810fbf0c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff810fd67e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff810fdd29e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff810fd6622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff810fd0950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff810f98bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff810fd03e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff810fbf5a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff810fbf2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff80a7c22f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff80a7c1174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x00000001182e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff80a7b37b7 -[NSApplication run] + 586
+14  XUL                                 0x00000001182e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011c0f504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000118776459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011c17905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011c17947c workerlz4_decompress + 955356
+19  firefox-bin                         0x000000010688ffe5 firefox-bin + 8165
+20  dyld                                0x00007ff807265310 start + 2432
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.zillow.com."
+1   HIToolbox                           0x00007ff811032726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff810fd6852 SetMenuBarObscured + 226
+3   HIToolbox                           0x00007ff810fd64ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+4   HIToolbox                           0x00007ff810fd0996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+5   HIToolbox                           0x00007ff810f98bd2 _NotifyEventLoopObservers + 153
+6   AppKit                              0x00007ff80a9b0f73 -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:] + 3212
+7   AppKit                              0x00007ff80a92758e -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:] + 2595
+8   AppKit                              0x00007ff80a92694f -[NSWindow(NSEventRouting) sendEvent:] + 345
+9   XUL                                 0x000000011b45b4b5 mozilla_set_coreaudio_notification_runloop_if_needed + 6400437
+10  AppKit                              0x00007ff80a924cbe -[NSApplication(NSEvent) sendEvent:] + 358
+11  XUL                                 0x00000001182e2f2c _ZN14nsXPTCStubBase7Stub249Ev + 12293388
+12  AppKit                              0x00007ff80abe3665 -[NSApplication _handleEvent:] + 65
+13  AppKit                              0x00007ff80a7b37dc -[NSApplication run] + 623
+14  XUL                                 0x00000001182e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011c0f504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000118776459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011c17905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011c17947c workerlz4_decompress + 955356
+19  firefox-bin                         0x000000010688ffe5 firefox-bin + 8165
+20  dyld                                0x00007ff807265310 start + 2432
+1   HIToolbox                           0x00007ff810fbf0c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff810fd67e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff810fdd29e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff810fd6622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff810fd0950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff810f98bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff810fd03e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff810fbf5a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff810fbf2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff80a7c22f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff80a7c1174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x00000001182e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff80a7b37b7 -[NSApplication run] + 586
+14  XUL                                 0x00000001182e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011c0f504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000118776459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011c17905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011c17947c workerlz4_decompress + 955356
+19  firefox-bin                         0x000000010688ffe5 firefox-bin + 8165
+20  dyld                                0x00007ff807265310 start + 2432
+1   HIToolbox                           0x00007ff811032726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff810fd6852 SetMenuBarObscured + 226
+3   HIToolbox                           0x00007ff810fd64ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+4   HIToolbox                           0x00007ff810fd0996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+5   HIToolbox                           0x00007ff810f98bd2 _NotifyEventLoopObservers + 153
+6   AppKit                              0x00007ff80a9b0f73 -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:] + 3212
+7   AppKit                              0x00007ff80a92758e -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:] + 2595
+8   AppKit                              0x00007ff80a92694f -[NSWindow(NSEventRouting) sendEvent:] + 345
+9   XUL                                 0x000000011b45b4b5 mozilla_set_coreaudio_notification_runloop_if_needed + 6400437
+10  AppKit                              0x00007ff80a924cbe -[NSApplication(NSEvent) sendEvent:] + 358
+11  XUL                                 0x00000001182e2f2c _ZN14nsXPTCStubBase7Stub249Ev + 12293388
+12  AppKit                              0x00007ff80abe3665 -[NSApplication _handleEvent:] + 65
+13  AppKit                              0x00007ff80a7b37dc -[NSApplication run] + 623
+14  XUL                                 0x00000001182e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011c0f504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000118776459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011c17905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011c17947c workerlz4_decompress + 955356
+19  firefox-bin                         0x000000010688ffe5 firefox-bin + 8165
+20  dyld                                0x00007ff807265310 start + 2432
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.warn: "Listener for event 'frame' did not return a promise."
+console.error: "Failed to start [root-node] legacy listener for target null" (new Error("Connection closed, pending request to server0.conn0.windowGlobal6442450966/domwalker21, type watchRootNode failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\nmodule.exports@resource://devtools/shared/commands/resource/legacy-listeners/root-node.js:60:31\n", "resource://devtools/shared/protocol/Front.js", 106))
+1678335453469	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335453478	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335453487	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335453497	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+1678335453504	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+1678335453520	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.warn: "Listener for event 'frame' did not return a promise."
+1678335453529	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+1678335453538	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.warn: "Listener for event 'frame' did not return a promise."
+1678335453548	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+1678335453556	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 603))
+console.warn: "Listener for event 'frame' did not return a promise."
+1678335463480	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335463491	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335463500	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.warn: "Listener for event 'frame' did not return a promise."
+1678335463512	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.warn: "Listener for event 'frame' did not return a promise."
+1678335463528	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.warn: "Listener for event 'frame' did not return a promise."
+1678335463538	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.warn: "Listener for event 'frame' did not return a promise."
+1678335463549	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+1678335463566	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.warn: "Listener for event 'frame' did not return a promise."
+1678335463576	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.warn: "Listener for event 'frame' did not return a promise."
+1678335463584	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1678335472220	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335472229	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335472236	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335472241	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335472247	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335472252	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335472259	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335472264	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335472269	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678335472275	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1   HIToolbox                           0x00007ff810fbf0c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff810fd67e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff810fdd29e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff810fd6622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff810fd0950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff810f98bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff810fd03e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff810fbf5a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff810fbf2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff80a7c22f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff80a7c1174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x00000001182e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff80a7b37b7 -[NSApplication run] + 586
+14  XUL                                 0x00000001182e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011c0f504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000118776459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011c17905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011c17947c workerlz4_decompress + 955356
+19  firefox-bin                         0x000000010688ffe5 firefox-bin + 8165
+20  dyld                                0x00007ff807265310 start + 2432
+1678335895960	Marionette	INFO	Stopped listening on port 50402
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1678336573974	geckodriver	INFO	Listening on 127.0.0.1:49247
+1678336574495	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "49248" "--r ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fg/20qjr3zj73q_m0k3qy44x0n00000gn/T/rust_mozprofileInEG93"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1   HIToolbox                           0x00007ff81b64f726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff81b64f2b8 _ZN15MenuBarInstance14EnableAutoShowEv + 52
+3   HIToolbox                           0x00007ff81b5f3908 SetMenuBarObscured + 408
+4   HIToolbox                           0x00007ff81b5f34ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+5   HIToolbox                           0x00007ff81b5ed996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+6   HIToolbox                           0x00007ff81b5b5bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81b5ed3e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81b5dc3ec ReceiveNextEventCommon + 285
+9   HIToolbox                           0x00007ff81b5dc2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff814ddf2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff814dde174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x0000000117ee2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  XUL                                 0x0000000117ee3d1a _ZN14nsXPTCStubBase7Stub249Ev + 12296954
+14  XUL                                 0x0000000117ee44bc _ZN14nsXPTCStubBase7Stub249Ev + 12298908
+15  XUL                                 0x000000011731210b NS_NewLocalFileWithFSRef + 256523
+16  XUL                                 0x0000000117318457 NS_NewLocalFileWithFSRef + 281943
+17  XUL                                 0x0000000116d97d8e NS_InvokeByIndex + 142
+18  XUL                                 0x0000000117626196 _ZN14nsXPTCStubBase7Stub249Ev + 3131254
+19  XUL                                 0x0000000117628181 _ZN14nsXPTCStubBase7Stub249Ev + 3139425
+20  XUL                                 0x00000001183bdf0d XRE_GetBootstrap + 288541
+21  XUL                                 0x00000001183c8d5a XRE_GetBootstrap + 333162
+22  XUL                                 0x00000001187c4b8b XRE_GetBootstrap + 4510619
+23  ???                                 0x00003e4091cc4da9 0x0 + 68447044914601
+24  ???                                 0x00003e4091ccc4cc 0x0 + 68447044945100
+25  ???                                 0x00003e4091cc24ee 0x0 + 68447044904174
+26  XUL                                 0x00000001187ccccf XRE_GetBootstrap + 4543711
+27  XUL                                 0x00000001183b12f3 XRE_GetBootstrap + 236291
+28  XUL                                 0x00000001183c966a XRE_GetBootstrap + 335482
+29  XUL                                 0x000000011847d344 XRE_GetBootstrap + 1071956
+30  XUL                                 0x00000001183bdf0d XRE_GetBootstrap + 288541
+31  XUL                                 0x00000001183c966a XRE_GetBootstrap + 335482
+32  XUL                                 0x0000000118433395 XRE_GetBootstrap + 768933
+33  XUL                                 0x00000001176206f9 _ZN14nsXPTCStubBase7Stub249Ev + 3108057
+34  XUL                                 0x0000000117329b6a _ZN14nsXPTCStubBase7Stub249Ev + 330
+35  XUL                                 0x0000000117328abb NS_NewLocalFileWithFSRef + 349115
+36  XUL                                 0x000000011bd7da98 workerlz4_decompress + 973304
+37  XUL                                 0x00000001183760c4 workerlz4_maxCompressedSize + 445156
+38  XUL                                 0x000000011bd7905c workerlz4_decompress + 954300
+39  XUL                                 0x000000011bd7947c workerlz4_decompress + 955356
+40  firefox-bin                         0x00000001063d9fe5 firefox-bin + 8165
+41  dyld                                0x00007ff811882310 start + 2432
+1678336575302	Marionette	INFO	Marionette enabled
+1678336575833	Marionette	INFO	Listening on port 49255
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 49255
+WebDriver BiDi listening on ws://127.0.0.1:49248
+1678336576040	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fg/20qjr3zj73q_m0k3qy44x0n00000gn/T/rust_mozprofileInEG93/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49248/devtools/browser/3ee0d4cb-26e0-4b92-90fd-d9b14a35f446
+1   HIToolbox                           0x00007ff81b5dc0c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff81b5f37e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff81b5fa29e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff81b5f3622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff81b5ed950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff81b5b5bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81b5ed3e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81b5dc5a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff81b5dc2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff814ddf2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff814dde174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x0000000117ee2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff814dd07b7 -[NSApplication run] + 586
+14  XUL                                 0x0000000117ee3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011bcf504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000118376459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011bd7905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011bd7947c workerlz4_decompress + 955356
+19  firefox-bin                         0x00000001063d9fe5 firefox-bin + 8165
+20  dyld                                0x00007ff811882310 start + 2432
+1   HIToolbox                           0x00007ff81b64f726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff81b5f3852 SetMenuBarObscured + 226
+3   HIToolbox                           0x00007ff81b5f34ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+4   HIToolbox                           0x00007ff81b5ed996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+5   HIToolbox                           0x00007ff81b5b5bd2 _NotifyEventLoopObservers + 153
+6   AppKit                              0x00007ff814fcdf73 -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:] + 3212
+7   AppKit                              0x00007ff814f4458e -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:] + 2595
+8   AppKit                              0x00007ff814f4394f -[NSWindow(NSEventRouting) sendEvent:] + 345
+9   XUL                                 0x000000011b05b4b5 mozilla_set_coreaudio_notification_runloop_if_needed + 6400437
+10  AppKit                              0x00007ff814f41cbe -[NSApplication(NSEvent) sendEvent:] + 358
+11  XUL                                 0x0000000117ee2f2c _ZN14nsXPTCStubBase7Stub249Ev + 12293388
+12  AppKit                              0x00007ff815200665 -[NSApplication _handleEvent:] + 65
+13  AppKit                              0x00007ff814dd07dc -[NSApplication run] + 623
+14  XUL                                 0x0000000117ee3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011bcf504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000118376459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011bd7905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011bd7947c workerlz4_decompress + 955356
+19  firefox-bin                         0x00000001063d9fe5 firefox-bin + 8165
+20  dyld                                0x00007ff811882310 start + 2432
+1   HIToolbox                           0x00007ff81b5dc0c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff81b5f37e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff81b5fa29e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff81b5f3622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff81b5ed950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff81b5b5bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81b5ed3e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81b5dc5a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff81b5dc2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff814ddf2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff814dde174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x0000000117ee2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff814dd07b7 -[NSApplication run] + 586
+14  XUL                                 0x0000000117ee3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011bcf504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000118376459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011bd7905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011bd7947c workerlz4_decompress + 955356
+19  firefox-bin                         0x00000001063d9fe5 firefox-bin + 8165
+20  dyld                                0x00007ff811882310 start + 2432
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.zillow.com."
+1   HIToolbox                           0x00007ff81b64f726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff81b5f3852 SetMenuBarObscured + 226
+3   HIToolbox                           0x00007ff81b5f34ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+4   HIToolbox                           0x00007ff81b5ed996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+5   HIToolbox                           0x00007ff81b5b5bd2 _NotifyEventLoopObservers + 153
+6   AppKit                              0x00007ff814fcdf73 -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:] + 3212
+7   AppKit                              0x00007ff814f4458e -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:] + 2595
+8   AppKit                              0x00007ff814f4394f -[NSWindow(NSEventRouting) sendEvent:] + 345
+9   XUL                                 0x000000011b05b4b5 mozilla_set_coreaudio_notification_runloop_if_needed + 6400437
+10  AppKit                              0x00007ff814f41cbe -[NSApplication(NSEvent) sendEvent:] + 358
+11  XUL                                 0x0000000117ee2f2c _ZN14nsXPTCStubBase7Stub249Ev + 12293388
+12  AppKit                              0x00007ff815200665 -[NSApplication _handleEvent:] + 65
+13  AppKit                              0x00007ff814dd07dc -[NSApplication run] + 623
+14  XUL                                 0x0000000117ee3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011bcf504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000118376459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011bd7905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011bd7947c workerlz4_decompress + 955356
+19  firefox-bin                         0x00000001063d9fe5 firefox-bin + 8165
+20  dyld                                0x00007ff811882310 start + 2432
+1678336626259	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336626266	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336626272	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336626279	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336626286	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336626312	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336626323	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336626328	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336626335	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336626340	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336641389	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336641399	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336641410	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336641428	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336641441	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336641450	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336641462	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336641472	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336641483	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336641492	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1   HIToolbox                           0x00007ff81b5dc0c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff81b5f37e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff81b5fa29e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff81b5f3622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff81b5ed950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff81b5b5bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81b5ed3e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81b5dc5a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff81b5dc2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff814ddf2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff814dde174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x0000000117ee2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff814dd07b7 -[NSApplication run] + 586
+14  XUL                                 0x0000000117ee3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011bcf504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000118376459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011bd7905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011bd7947c workerlz4_decompress + 955356
+19  firefox-bin                         0x00000001063d9fe5 firefox-bin + 8165
+20  dyld                                0x00007ff811882310 start + 2432
+1   HIToolbox                           0x00007ff81b64f726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff81b5f3852 SetMenuBarObscured + 226
+3   HIToolbox                           0x00007ff81b5f34ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+4   HIToolbox                           0x00007ff81b5ed996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+5   HIToolbox                           0x00007ff81b5b5bd2 _NotifyEventLoopObservers + 153
+6   AppKit                              0x00007ff814fcdf73 -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:] + 3212
+7   AppKit                              0x00007ff814f4458e -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:] + 2595
+8   AppKit                              0x00007ff814f4394f -[NSWindow(NSEventRouting) sendEvent:] + 345
+9   XUL                                 0x000000011b05b4b5 mozilla_set_coreaudio_notification_runloop_if_needed + 6400437
+10  AppKit                              0x00007ff814f41cbe -[NSApplication(NSEvent) sendEvent:] + 358
+11  XUL                                 0x0000000117ee2f2c _ZN14nsXPTCStubBase7Stub249Ev + 12293388
+12  AppKit                              0x00007ff815200665 -[NSApplication _handleEvent:] + 65
+13  AppKit                              0x00007ff814dd07dc -[NSApplication run] + 623
+14  XUL                                 0x0000000117ee3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011bcf504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000118376459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011bd7905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011bd7947c workerlz4_decompress + 955356
+19  firefox-bin                         0x00000001063d9fe5 firefox-bin + 8165
+20  dyld                                0x00007ff811882310 start + 2432
+1678336687356	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336687367	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336687375	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336687391	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336687420	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336687432	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336687440	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336687450	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336687461	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678336687472	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1   HIToolbox                           0x00007ff81b5dc0c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff81b5f37e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff81b5fa29e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff81b5f3622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff81b5ed950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff81b5b5bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81b5ed3e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81b5dc5a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff81b5dc2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff814ddf2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff814dde174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x0000000117ee2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff814dd07b7 -[NSApplication run] + 586
+14  XUL                                 0x0000000117ee3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011bcf504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000118376459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011bd7905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011bd7947c workerlz4_decompress + 955356
+19  firefox-bin                         0x00000001063d9fe5 firefox-bin + 8165
+20  dyld                                0x00007ff811882310 start + 2432
+1678337189491	geckodriver	INFO	Listening on 127.0.0.1:49515
+1678337190013	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "49516" "--r ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fg/20qjr3zj73q_m0k3qy44x0n00000gn/T/rust_mozprofileUK3yAe"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1   HIToolbox                           0x00007ff81b64f726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff81b64f2b8 _ZN15MenuBarInstance14EnableAutoShowEv + 52
+3   HIToolbox                           0x00007ff81b5f3908 SetMenuBarObscured + 408
+4   HIToolbox                           0x00007ff81b5f34ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+5   HIToolbox                           0x00007ff81b5ed996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+6   HIToolbox                           0x00007ff81b5b5bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81b5ed3e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81b5dc3ec ReceiveNextEventCommon + 285
+9   HIToolbox                           0x00007ff81b5dc2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff814ddf2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff814dde174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x000000011b5e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  XUL                                 0x000000011b5e3d1a _ZN14nsXPTCStubBase7Stub249Ev + 12296954
+14  XUL                                 0x000000011b5e44bc _ZN14nsXPTCStubBase7Stub249Ev + 12298908
+15  XUL                                 0x000000011aa1210b NS_NewLocalFileWithFSRef + 256523
+16  XUL                                 0x000000011aa18457 NS_NewLocalFileWithFSRef + 281943
+17  XUL                                 0x000000011a497d8e NS_InvokeByIndex + 142
+18  XUL                                 0x000000011ad26196 _ZN14nsXPTCStubBase7Stub249Ev + 3131254
+19  XUL                                 0x000000011ad28181 _ZN14nsXPTCStubBase7Stub249Ev + 3139425
+20  XUL                                 0x000000011babdf0d XRE_GetBootstrap + 288541
+21  XUL                                 0x000000011bac966a XRE_GetBootstrap + 335482
+22  XUL                                 0x000000011beea44e XRE_GetBootstrap + 4664414
+23  ???                                 0x000031e1f45add05 0x0 + 54846536998149
+24  ???                                 0x000031e1f45b74cc 0x0 + 54846537037004
+25  ???                                 0x000031e1f45ad4ee 0x0 + 54846536996078
+26  XUL                                 0x000000011beccccf XRE_GetBootstrap + 4543711
+27  XUL                                 0x000000011bab12f3 XRE_GetBootstrap + 236291
+28  XUL                                 0x000000011bac966a XRE_GetBootstrap + 335482
+29  XUL                                 0x000000011bb7d344 XRE_GetBootstrap + 1071956
+30  XUL                                 0x000000011babdf0d XRE_GetBootstrap + 288541
+31  XUL                                 0x000000011bac966a XRE_GetBootstrap + 335482
+32  XUL                                 0x000000011bb33395 XRE_GetBootstrap + 768933
+33  XUL                                 0x000000011ad206f9 _ZN14nsXPTCStubBase7Stub249Ev + 3108057
+34  XUL                                 0x000000011aa29b6a _ZN14nsXPTCStubBase7Stub249Ev + 330
+35  XUL                                 0x000000011aa28abb NS_NewLocalFileWithFSRef + 349115
+36  XUL                                 0x000000011f47da98 workerlz4_decompress + 973304
+37  XUL                                 0x000000011ba760c4 workerlz4_maxCompressedSize + 445156
+38  XUL                                 0x000000011f47905c workerlz4_decompress + 954300
+39  XUL                                 0x000000011f47947c workerlz4_decompress + 955356
+40  firefox-bin                         0x0000000109b1cfe5 firefox-bin + 8165
+41  dyld                                0x00007ff811882310 start + 2432
+1678337190657	Marionette	INFO	Marionette enabled
+1678337190775	Marionette	INFO	Listening on port 49523
+Read port: 49523
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+WebDriver BiDi listening on ws://127.0.0.1:49516
+1678337191444	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1   HIToolbox                           0x00007ff81b75652b _ZN15MenuBarInstance21IsAutoShowHideAllowedEv + 259
+2   HIToolbox                           0x00007ff81b64f33e _ZN15MenuBarInstance24UpdateAutoShowVisibilityE5Pointh + 34
+3   HIToolbox                           0x00007ff81b5be7a4 _ZN15MenuBarInstance16ForEachMenuBarDoEU13block_pointerFvPS_E + 46
+4   HIToolbox                           0x00007ff81b64f93d _ZN15MenuBarInstance20AutoShowHideObserverEjP14OpaqueEventRefPv + 165
+5   HIToolbox                           0x00007ff81b5b5bd2 _NotifyEventLoopObservers + 153
+6   HIToolbox                           0x00007ff81b5e7fb8 PostEventToQueueInternal + 700
+7   HIToolbox                           0x00007ff81b5e9871 _ZL29CreateAndPostEventWithCGEventP9__CGEventjhP17__CFMachPortBoost + 404
+8   HIToolbox                           0x00007ff81b5f5ee9 _ZL15Convert1CGEventh + 246
+9   HIToolbox                           0x00007ff81b5f5d91 _ZL16MainLoopObserverjP14OpaqueEventRefPv + 41
+10  HIToolbox                           0x00007ff81b5b5bd2 _NotifyEventLoopObservers + 153
+11  HIToolbox                           0x00007ff81b5dc726 RunCurrentEventLoopInMode + 228
+12  HIToolbox                           0x00007ff81b5dc396 ReceiveNextEventCommon + 199
+13  HIToolbox                           0x00007ff81b5dc2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+14  AppKit                              0x00007ff814ddf2f3 _DPSNextEvent + 909
+15  AppKit                              0x00007ff814dde174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+16  XUL                                 0x000000011b5e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+17  AppKit                              0x00007ff814dd07b7 -[NSApplication run] + 586
+18  XUL                                 0x000000011b5e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+19  XUL                                 0x000000011f3f504c workerlz4_decompress + 413612
+20  XUL                                 0x000000011ba76459 workerlz4_maxCompressedSize + 446073
+21  XUL                                 0x000000011f47905c workerlz4_decompress + 954300
+22  XUL                                 0x000000011f47947c workerlz4_decompress + 955356
+23  firefox-bin                         0x0000000109b1cfe5 firefox-bin + 8165
+24  dyld                                0x00007ff811882310 start + 2432
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fg/20qjr3zj73q_m0k3qy44x0n00000gn/T/rust_mozprofileUK3yAe/search.json.mozlz4", (void 0)))
+1   HIToolbox                           0x00007ff81b5dc0c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff81b5f37e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff81b5fa29e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff81b5f3622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff81b5ed950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff81b5b5bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81b5ed3e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81b5dc3ec ReceiveNextEventCommon + 285
+9   HIToolbox                           0x00007ff81b5dc2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff814ddf2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff814dde174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x000000011b5e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff814dd07b7 -[NSApplication run] + 586
+14  XUL                                 0x000000011b5e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011f3f504c workerlz4_decompress + 413612
+16  XUL                                 0x000000011ba76459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011f47905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011f47947c workerlz4_decompress + 955356
+19  firefox-bin                         0x0000000109b1cfe5 firefox-bin + 8165
+20  dyld                                0x00007ff811882310 start + 2432
+DevTools listening on ws://127.0.0.1:49516/devtools/browser/ffceaef7-e88e-479d-b619-63e38fa6cfcd
+1   HIToolbox                           0x00007ff81b64f726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff81b5f3852 SetMenuBarObscured + 226
+3   HIToolbox                           0x00007ff81b5f34ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+4   HIToolbox                           0x00007ff81b5ed996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+5   HIToolbox                           0x00007ff81b5b5bd2 _NotifyEventLoopObservers + 153
+6   HIToolbox                           0x00007ff81b5ed3e6 AcquireEventFromQueue + 494
+7   HIToolbox                           0x00007ff81b5dc5a4 ReceiveNextEventCommon + 725
+8   HIToolbox                           0x00007ff81b5dc2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+9   AppKit                              0x00007ff814ddf2f3 _DPSNextEvent + 909
+10  AppKit                              0x00007ff814dde174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+11  XUL                                 0x0000000117ee2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+12  AppKit                              0x00007ff814dd07b7 -[NSApplication run] + 586
+13  XUL                                 0x0000000117ee3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+14  XUL                                 0x000000011bcf504c workerlz4_decompress + 413612
+15  XUL                                 0x0000000118376459 workerlz4_maxCompressedSize + 446073
+16  XUL                                 0x000000011bd7905c workerlz4_decompress + 954300
+17  XUL                                 0x000000011bd7947c workerlz4_decompress + 955356
+18  firefox-bin                         0x00000001063d9fe5 firefox-bin + 8165
+19  dyld                                0x00007ff811882310 start + 2432
+1   HIToolbox                           0x00007ff81b5dc0c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff81b5f37e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff81b5fa29e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff81b5f3622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff81b5ed950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff81b5b5bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81b5ed3e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81b5dc5a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff81b5dc2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff814ddf2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff814dde174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x0000000117ee2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff814dd07b7 -[NSApplication run] + 586
+14  XUL                                 0x0000000117ee3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011bcf504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000118376459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011bd7905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011bd7947c workerlz4_decompress + 955356
+19  firefox-bin                         0x00000001063d9fe5 firefox-bin + 8165
+20  dyld                                0x00007ff811882310 start + 2432
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.zillow.com."
+1   HIToolbox                           0x00007ff81b64f726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff81b5f3852 SetMenuBarObscured + 226
+3   HIToolbox                           0x00007ff81b5f34ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+4   HIToolbox                           0x00007ff81b5ed996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+5   HIToolbox                           0x00007ff81b5b5bd2 _NotifyEventLoopObservers + 153
+6   AppKit                              0x00007ff814fcdf73 -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:] + 3212
+7   AppKit                              0x00007ff814f4458e -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:] + 2595
+8   AppKit                              0x00007ff814f4394f -[NSWindow(NSEventRouting) sendEvent:] + 345
+9   XUL                                 0x000000011e75b4b5 mozilla_set_coreaudio_notification_runloop_if_needed + 6400437
+10  AppKit                              0x00007ff814f41cbe -[NSApplication(NSEvent) sendEvent:] + 358
+11  XUL                                 0x000000011b5e2f2c _ZN14nsXPTCStubBase7Stub249Ev + 12293388
+12  AppKit                              0x00007ff815200665 -[NSApplication _handleEvent:] + 65
+13  AppKit                              0x00007ff814dd07dc -[NSApplication run] + 623
+14  XUL                                 0x000000011b5e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011f3f504c workerlz4_decompress + 413612
+16  XUL                                 0x000000011ba76459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011f47905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011f47947c workerlz4_decompress + 955356
+19  firefox-bin                         0x0000000109b1cfe5 firefox-bin + 8165
+20  dyld                                0x00007ff811882310 start + 2432
+1678337228442	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678337228451	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678337228461	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678337228472	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678337228485	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678337228493	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678337228501	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678337228510	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678337228519	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678337228525	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1   HIToolbox                           0x00007ff81b5dc0c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff81b5f37e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff81b5fa29e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff81b5f3622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff81b5ed950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff81b5b5bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81b5ed3e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81b5dc5a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff81b5dc2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff814ddf2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff814dde174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x000000011b5e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff814dd07b7 -[NSApplication run] + 586
+14  XUL                                 0x000000011b5e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011f3f504c workerlz4_decompress + 413612
+16  XUL                                 0x000000011ba76459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011f47905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011f47947c workerlz4_decompress + 955356
+19  firefox-bin                         0x0000000109b1cfe5 firefox-bin + 8165
+20  dyld                                0x00007ff811882310 start + 2432
+1   HIToolbox                           0x00007ff81b64f726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff81b5f3852 SetMenuBarObscured + 226
+3   HIToolbox                           0x00007ff81b5f34ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+4   HIToolbox                           0x00007ff81b5ed996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+5   HIToolbox                           0x00007ff81b5b5bd2 _NotifyEventLoopObservers + 153
+6   AppKit                              0x00007ff814fcdf73 -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:] + 3212
+7   AppKit                              0x00007ff814f4458e -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:] + 2595
+8   AppKit                              0x00007ff814f4394f -[NSWindow(NSEventRouting) sendEvent:] + 345
+9   XUL                                 0x000000011e75b4b5 mozilla_set_coreaudio_notification_runloop_if_needed + 6400437
+10  AppKit                              0x00007ff814f41cbe -[NSApplication(NSEvent) sendEvent:] + 358
+11  XUL                                 0x000000011b5e2f2c _ZN14nsXPTCStubBase7Stub249Ev + 12293388
+12  AppKit                              0x00007ff815200665 -[NSApplication _handleEvent:] + 65
+13  AppKit                              0x00007ff814dd07dc -[NSApplication run] + 623
+14  XUL                                 0x000000011b5e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011f3f504c workerlz4_decompress + 413612
+16  XUL                                 0x000000011ba76459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011f47905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011f47947c workerlz4_decompress + 955356
+19  firefox-bin                         0x0000000109b1cfe5 firefox-bin + 8165
+20  dyld                                0x00007ff811882310 start + 2432
+1   HIToolbox                           0x00007ff81b5dc0c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff81b5f37e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff81b5fa29e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff81b5f3622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff81b5ed950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff81b5b5bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81b5ed3e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81b5dc5a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff81b5dc2b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff814ddf2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff814dde174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x000000011b5e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff814dd07b7 -[NSApplication run] + 586
+14  XUL                                 0x000000011b5e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011f3f504c workerlz4_decompress + 413612
+16  XUL                                 0x000000011ba76459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011f47905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011f47947c workerlz4_decompress + 955356
+19  firefox-bin                         0x0000000109b1cfe5 firefox-bin + 8165
+20  dyld                                0x00007ff811882310 start + 2432
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 603))
+1678337336572	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678337336578	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678337336587	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678337336597	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678337336603	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678337336609	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678337336618	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678337336622	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678337336627	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678337336632	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1678337498752	Marionette	INFO	Stopped listening on port 49523
+1678337512811	Marionette	INFO	Stopped listening on port 49255
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
