@@ -110,3 +110,40 @@ The course I enrolled in is:
 ![Capture](https://user-images.githubusercontent.com/76864633/226918553-d06b9fbd-f294-4749-ba38-660e599feb00.PNG)
 
 Its from https://university.mongodb.com/
+
+
+## 3/31/2023
+
+This week, I've had a hard time finding time to work on this project. My focus this week is learning MongoDB. During work this week, I had my regular daily meeting with my boss and I explained to him what I was doing for my project. He suggested I reached out to one of my co-workers who uses MongoDB in his everyday work to see if he can provide me some advice.
+
+After Speaking with my coworker on tuesday the 28th, I was told that I should use some of my work hours to study. That's what ill be doing on friday (the 31st).
+
+I have to strictly follow a Linkedin Learning video provided from cigna so I will have to restart my tutorial process from 0. I am however grateful that this tutorial focuses more on using a local computer as the main source of the databases rather than the MongoDB Atlas. I will spend more time in the command line getting myself more comfortable with MongoDB.
+
+The first step in this tutorial is to install MongoDB onto my computer (I didn't before).
+
+I have to install npm so that then I could use the command m to install mongodb.
+
+I came accross an issue stating that my macbook didn't have the dependencies to run mongo so I went on the [Mongodb Site](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/) for help. I had to run this code in my terminal to Install MongoDB Community Edition:
+
+      xcode-select --install
+
+      brew tap mongodb/brew
+
+      brew update
+
+      brew install mongodb-community@6.0
+
+
+I ran mongod --version and mongosh --versoion to check that MongoDB & mongo's bash was succesfully installed.
+
+Lastly, I ran:
+
+brew install mongodb-database-tools
+
+to install mongos database tools.
+
+
+
+
+
