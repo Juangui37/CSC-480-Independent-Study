@@ -145,5 +145,54 @@ to install mongos database tools.
 
 
 
+## 03/31/2023
+
+I have yet again started a new way to learn MongoDB, and its probably the way I shouldve started with in the first place... And thats: using [W3](https://www.w3schools.com/mongodb/index.php) and James Conlin as a reference for assistance
+
+By following this way and asking James simple questions, I have been able to better learn how to use MongoDB.
+
+I now understand that I do not want to run MongoDB only locally through my computer but, I want to use the Atlas web service that mongoDB provides so that it manages my database.
+
+Following rhe instructions from W3Schools, I have learned to also use MongoDB's direct documentation on how to use their platform. 
+
+I learned that I could import my data to my database in 3 different ways.
+
+1. Using the 'mongoimport' command using the macbook's terminal
+2. Using MongoDB's GUI * Compass *
+3. Connecting to my database from VS Codes and using this IDE as my platform to play around with my database.
+
+Since, I know that James already created a mongo database using the VS code Extension, I will follow that route.
+
+** I have successfully learned how to connect to my database using the VSCode Extension **
+
+## 03/31/2023 8:00pm
+
+Before I import my housing data to my project. I thought about how I would create the schema for the housing data I recieved from the realtor.
+
+After thinking about it for a minute, I realized that the housing data I recieved is pretty much only Property listing information. Since, I want to use this project to practice my NoSQL vs SQL skills, I want their to be an opprutunity for me to use joins/embbeded queries.
+
+I decided I should use python to create 3 more columns:
+- AgentID
+- Agent Phone Number
+- Agenter Email
+
+Now I will include screenshot as how I want my MySQL & MongoDB tables to look like:
+
+MySQL:
+
+
+**PropertyInfo Table**
+<img width="1079" alt="Screenshot 2023-03-31 at 7 57 49 PM" src="https://user-images.githubusercontent.com/76864633/229252174-90ee6ee5-353c-4cfa-a0ad-fe99437e79f0.png">
+
+
+**Realtor Table**
+<img width="142" alt="Screenshot 2023-03-31 at 7 58 25 PM" src="https://user-images.githubusercontent.com/76864633/229252296-204d055a-9b7a-4217-9fd0-c3ba32b6a8a6.png">
+
+
+**RealtorListing Table**
+
+<img width="395" alt="Screenshot 2023-03-31 at 7 58 11 PM" src="https://user-images.githubusercontent.com/76864633/229252227-196c552f-a5f7-4dde-a6cf-3784a72939f7.png">
+
+My MongoDB will only have 2 collections:
 
 
