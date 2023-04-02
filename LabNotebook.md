@@ -182,10 +182,12 @@ MySQL:
 
 
 **PropertyInfo Table**
+
 <img width="1079" alt="Screenshot 2023-03-31 at 7 57 49 PM" src="https://user-images.githubusercontent.com/76864633/229252174-90ee6ee5-353c-4cfa-a0ad-fe99437e79f0.png">
 
 
 **Realtor Table**
+
 <img width="142" alt="Screenshot 2023-03-31 at 7 58 25 PM" src="https://user-images.githubusercontent.com/76864633/229252296-204d055a-9b7a-4217-9fd0-c3ba32b6a8a6.png">
 
 
@@ -194,5 +196,92 @@ MySQL:
 <img width="395" alt="Screenshot 2023-03-31 at 7 58 11 PM" src="https://user-images.githubusercontent.com/76864633/229252227-196c552f-a5f7-4dde-a6cf-3784a72939f7.png">
 
 My MongoDB will only have 2 collections:
+
+
+## 04/01/2023
+
+Today I went on CIGNA's University site to learn how to configure and set up MySQL on my local computer.
+
+In this tutorial I learned:
+- How to install MySQL
+- How to install MySQL WorkBench
+- How to create users and give them permissions
+- How to create tables and query example databases using example data
+
+
+I got my certification on linkedin:
+
+<img width="372" alt="Screenshot 2023-04-02 at 11 43 14 AM" src="https://user-images.githubusercontent.com/76864633/229363660-afa1a2aa-3383-4686-8bb8-2d4670d0465d.png">
+
+
+## 04/02/2023
+
+Now, that I have configured everything for my MySQL, I will set up the 'Housing' Database. This database will have the 3 tables that I included before with all field names. Then, I will import the data from my local computer.
+
+The SQL code I use to create my database and table's (& its fields) looks like this:
+
+CREATE DATABASE Housing;
+USE Housing;
+
+CREATE TABLE PropertyInfo (
+  MLSNum INT PRIMARY KEY,
+  Status VARCHAR(255),
+  StatusChangeTimestamp DATETIME,
+  PropType VARCHAR(255),
+  ListPrice FLOAT,
+  ClosePrice FLOAT,
+  Address VARCHAR(255),
+  City VARCHAR(255),
+  Acres FLOAT,
+  SqFtTotal INT,
+  SqFtEstHeatedAboveGrade INT,
+  StyleOrRentType VARCHAR(255),
+  RoomsTotal INT,
+  BedsTotal INT,
+  Bathrooms FLOAT,
+  GaragePark VARCHAR(255),
+  YearBuilt INT,
+  DaysOnMarket INT
+);
+
+CREATE TABLE Realtor (
+  AgentID INT PRIMARY KEY,
+  ListingAgent VARCHAR(255),
+  PhoneNumber VARCHAR(255),
+  Email VARCHAR(255)
+);
+
+CREATE TABLE RealtorListing (
+  MLSNum INT,
+  AgentID INT,
+  PRIMARY KEY (MLSNum, AgentID),
+  FOREIGN KEY (MLSNum) REFERENCES PropertyInfo(MLSNum),
+  FOREIGN KEY (AgentID) REFERENCES Realtor(AgentID)
+);
+
+I will now show you screenshots of the output the MySQL CommandLine gives me when I run:
+
+SHOW DATABASES;
+
+USE Housing;
+
+SHOW TABLES;
+
+SHOW COLUMNS FROM PropertyInfo;
+
+
+SHOW DATABASES;
+
+<img width="193" alt="Screenshot 2023-04-02 at 12 24 46 PM" src="https://user-images.githubusercontent.com/76864633/229365788-3c6f23d6-6aae-4d27-9819-a44e9447d99c.png">
+
+USE Housing;
+SHOW TABLES;
+
+<img width="179" alt="Screenshot 2023-04-02 at 12 25 45 PM" src="https://user-images.githubusercontent.com/76864633/229365826-9a634632-387d-46b6-917c-79ec812cb6a9.png">
+
+
+SHOW COLUMNS FROM PropertyInfo;
+
+<img width="521" alt="Screenshot 2023-04-02 at 12 26 35 PM" src="https://user-images.githubusercontent.com/76864633/229365870-b3a906c4-41f0-4709-9811-e79c0f467471.png">
 
 
