@@ -284,4 +284,33 @@ SHOW COLUMNS FROM PropertyInfo;
 
 <img width="521" alt="Screenshot 2023-04-02 at 12 26 35 PM" src="https://user-images.githubusercontent.com/76864633/229365870-b3a906c4-41f0-4709-9811-e79c0f467471.png">
 
+## 4/2/2023
+
+I've tried importing data into my database using this SQL code:
+
+            LOAD DATA INFILE '/Users/juanvillegas/Downloads/PropertyInfo.csv'
+            INTO TABLE PropertyInfo
+            FIELDS TERMINATED BY ',' 
+            ENCLOSED BY '"'
+            LINES TERMINATED BY '\n'
+            IGNORE 1 ROWS;
+
+I kept getting getting this error:
+
+      Error Code: 1290. The MySQL server is running with the --secure-file-priv option so it cannot execute this statement
+
+So I tried fixing it by [googling the error code](https://stackoverflow.com/questions/32737478/how-should-i-resolve-secure-file-priv-in-mysql)
+
+I followed the steps to try and Disable the secure-file-priv setting in MySQL and I ended up breaking MySQL by creating a my.cnf file and pasting this:
+
+      secure-file-priv = ""
+      
+      
+I evantually fixed MySQL again.
+
+## 04/03/2023
+
+I wanted to create this entire database through SQL but, I couldn't figure out how to import data into my tables with these issues.
+
+I decided to import my data using MySQL GUI - MySQL WorkBench.
 
