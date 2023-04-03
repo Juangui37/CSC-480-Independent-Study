@@ -348,3 +348,4 @@ SELECT MLSNum, ListPrice,
 
 <img width="316" alt="Screenshot 2023-04-03 at 5 00 55 PM" src="https://user-images.githubusercontent.com/76864633/229626550-4aeeeb14-f3e8-4977-b586-2f495d6af16d.png">
 
+**Some Things that took me a while to figure out was why some of my records weren't being uploaded. I realized that in my excel file, all my date columns had to be formated to 'yyyy-mm-dd'. I also had list & close price listed considered a FLOAT data type. My excel file did not have any decimals in this column so I changed the data type to an INT. I then realized that I had some empty columns in my list price column. I had to replace all the empty columns with 'null' so that MySQL would import everything.**
