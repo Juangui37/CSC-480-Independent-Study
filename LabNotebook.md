@@ -314,3 +314,37 @@ I wanted to create this entire database through SQL but, I couldn't figure out h
 
 I decided to import my data using MySQL GUI - MySQL WorkBench.
 
+
+To now test my database,
+
+I will type of SQL commands and show the results to show what I have done thus far in MySQL.
+
+From my macbooks Terminal:
+
+mysql -u admin -p
+
+*enters password*
+
+SHOW DATABASES;
+
+<img width="178" alt="Screenshot 2023-04-03 at 4 59 36 PM" src="https://user-images.githubusercontent.com/76864633/229626332-96795a7f-91f8-4ed5-8e33-1fc140b8ab8c.png">
+
+
+USE Housing;
+
+<img width="474" alt="Screenshot 2023-04-03 at 4 59 54 PM" src="https://user-images.githubusercontent.com/76864633/229626371-33c7336d-9218-4c5a-96cf-fa2eafa71c84.png">
+
+
+SHOW TABLES;
+
+<img width="176" alt="Screenshot 2023-04-03 at 5 00 08 PM" src="https://user-images.githubusercontent.com/76864633/229626407-db0cb109-4779-4aa4-99ce-f1c774c9d4f5.png">
+
+DESCRIBE PropertyInfo;
+
+<img width="520" alt="Screenshot 2023-04-03 at 5 00 23 PM" src="https://user-images.githubusercontent.com/76864633/229626462-8afa35b0-ddd3-420b-bde2-5631af8522c9.png">
+
+
+SELECT MLSNum, ListPrice,
+
+<img width="316" alt="Screenshot 2023-04-03 at 5 00 55 PM" src="https://user-images.githubusercontent.com/76864633/229626550-4aeeeb14-f3e8-4977-b586-2f495d6af16d.png">
+
