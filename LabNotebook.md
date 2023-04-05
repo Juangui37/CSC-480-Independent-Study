@@ -349,3 +349,90 @@ SELECT MLSNum, ListPrice,
 <img width="316" alt="Screenshot 2023-04-03 at 5 00 55 PM" src="https://user-images.githubusercontent.com/76864633/229626550-4aeeeb14-f3e8-4977-b586-2f495d6af16d.png">
 
 **Some Things that took me a while to figure out was why some of my records weren't being uploaded. I realized that in my excel file, all my date columns had to be formated to 'yyyy-mm-dd'. I also had list & close price listed considered a FLOAT data type. My excel file did not have any decimals in this column so I changed the data type to an INT. I then realized that I had some empty columns in my list price column. I had to replace all the empty columns with 'null' so that MySQL would import everything.**
+
+
+## 04/04/2023
+
+I used today to get a good understanding of MongoDB.
+
+I feel like playing around with MySQL made it easier to understand the set up process of a database
+
+I realized that the MongoDB set up is a lot easier than the way I was learning. All you really need to do is follow [this documentation from Mongo's website and take your time reading things](https://www.mongodb.com/docs/atlas/getting-started/). 
+
+**I started about 5 diffrernt tutorials/courses to learn mongo because I was so intimadted that I didn't comprehend anything...*
+
+Anyways, today, I fully grasped how to use mongoDB on my terminal and it's GUI *Compass*. I learned how to look at the databases that I have, create collections & documents, and how to import the data that I imported into MySQL.
+
+Let me show:
+
+First, since I'm using MongoDB's Atlas service, I'm not actually running or managing MongoDB locally. MongoDB Atlas is a cloud-based database service that allows users and business's to easily store, manage, and access their data through 3rd party providers like amazon or microsoft. 
+
+Before I could create a database, collections and documents, I had to create a Mongo Cluster. A cluster is a group of servers that work together to store and manage your data. I also had to configure my cluster by setting up security measures, defining data backup and recovery options, and specifying which types of data you want to store.
+
+Once that was done, I was able to access MongoDB through my terminal.
+
+To access MognoDB through your terminal when your running Mongo through Mongo Atlas you have to do the following:
+
+1. Go to Atlas website
+2. Click on Database under Deployment
+3. Click on the three dot button and then 'Command Line Tools'
+4. Click on Connect Instructions
+5. Click on Connect with MongoDB Shell
+6. Copy and paste your connection string in your terminal.
+
+For example my connection string looks like this:
+
+            mongosh "mongodb+srv://"ClusterName".sksxvtv.mongodb.net/"DatabaseConnectionName"" --apiVersion 1 --username j********
+            
+            
+ Once you paste that into your terminal, you should be prompted to paste the password you created when you created your cluster.
+ 
+ Then you should be connected.
+ 
+ From there, you can start interacting with MongoDB.
+ 
+ I like to start with  *Show Databases* or *Show dbs*  to see databases I have in my cluster and available to me.
+ 
+ 
+ ![Screenshot 2023-04-05 at 2 09 31 PM](https://user-images.githubusercontent.com/76864633/230167226-347b8d09-bd66-42ee-bb05-940ddae8f627.png)
+
+ 
+ A difference between MySQL & Mongo is that, to create a database, **you don't need to type:**
+ 
+ CREATE DATABASE "Name of database"
+ 
+ You just type: *USE "Name of database"*  Whether it's a created base or not.
+ 
+ 
+ ![Screenshot 2023-04-05 at 2 11 39 PM](https://user-images.githubusercontent.com/76864633/230167746-4a15491c-dc05-466f-8347-b9f0647edae7.png)
+ 
+ From their, I like to see what collections (or tables my database has) by typing: *Show Collections*
+
+
+![Screenshot 2023-04-05 at 2 12 19 PM](https://user-images.githubusercontent.com/76864633/230167868-ce688d3e-5500-401b-ac36-7ec323132e0d.png)
+
+ 
+ 
+Next, I like to what's inside my collections by typing: *db.propertyinfo.find()*
+
+![Screenshot 2023-04-05 at 2 12 53 PM](https://user-images.githubusercontent.com/76864633/230167983-7e0da63e-5e68-4879-aa63-f0d613743129.png)
+
+
+From the screenshot, you can tell theirs no data (or any documents) in my collection (table).
+
+~~I learned that if I want to import data to MongoDB from a .CSV file *without* using the MongoDB GUI, I have to first, convert the .csv into JSON format (because this is how Mongo stores data).
+
+~~I'm gonna open a new terminal, install csvjson with this command: 
+
+~~*pip install csvkit*
+
+~~Then I'm going to change the directory to where my .csv files are:
+
+~~cd OneDrive\ -\ Eastern\ Connecticut\ State\ University/ECSU/Year4/Spring2023/CSC480/Project\ Steps/Part\ 2\ DataBase/MongoDB
+
+~~and paste: *csvjson realtor.csv > realtor.json* 
+to have my csv file converted to
+
+I'm going to be using MongoDB's GUI *Compass* to import this data into my tables.
+  
+
