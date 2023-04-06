@@ -457,3 +457,25 @@ these are the steps I did:
 
 **Now whenever I log into my terminal I can type in *MongoConnect* and It'll let me access my cluster**
 
+## 4/5/2023 11:30pm
+Since, I am new to Mongo's Document type of NoSQL queries, I'm having a hard time finding the equivalent queries that I would do using MySQL.
+
+So far, the steps I know to do so far are:
+
+login in using mongo-connect
+
+show dbs
+
+use housing
+
+show collections
+
+db.Propertyinfo.FindOne() --> I use this to see the fields in these documents
+
+db.PropertyInfo.find({"Year Built": 1999}) --> this query gives me houses built in this year.
+
+I believe my next steps to do would be to figure out a list of queries that are wildy used in the corporate world. For example, I know that doing the different types of JOIN's and understanding them is very important.
+
+Onec I figure out this list, I will begin to play around with these queries in both my noSQL & SQL database to get more comfortable with them. 
+
+Then I will establish a list of maybe 10 - 20 queries I will use to test the preformance of each database against one another.
