@@ -435,4 +435,25 @@ to have my csv file converted to
 
 I'm going to be using MongoDB's GUI *Compass* to import this data into my tables.
   
+## 4/5/2023 10pm
+
+Because I have gotten more comfortable with MySQL & MongoDB, I have noticed how tedious it is to have to go to MongoDb's website to get my connection string to access Mongosh from my terminal.
+
+To attack this problem, I created a new alias on my terminal called 'mongo-connect' where the alias is representing my connection string.
+
+these are the steps I did:
+
+1. Opened my terminal
+2. ExecuteD the following:
+      *nano .zshrc (open's the .zshrc file in the nano text editor.)*
+3. Typed the following:
+      *alias mongo-connect='"CONNECTION_STRING"'*
+4. SaveD and exitED the nano editor by pressing:
+      *Ctrl+X, then Y, then Enter.*
+5. Reloaded my .zshrc file by running the following command:
+      *source .zshrc*
+6. Tested the Alias by running the Alias name:
+      *Mongo-connect*
+
+**Now whenever I log into my terminal I can type in *MongoConnect* and It'll let me access my cluster**
 
