@@ -479,3 +479,79 @@ I believe my next steps to do would be to figure out a list of queries that are 
 Onec I figure out this list, I will begin to play around with these queries in both my noSQL & SQL database to get more comfortable with them. 
 
 Then I will establish a list of maybe 10 - 20 queries I will use to test the preformance of each database against one another.
+
+## 04/08/2023
+
+Today, I spent time braionstorming what type of queries I would test the preformance of my database on. 
+
+On Thursday, I reached out to past Traveler Interns of the BI&A Program and current recipients of the program and asked them this:
+
+
+<img width="435" alt="Screenshot 2023-04-10 at 1 54 13 PM" src="https://user-images.githubusercontent.com/76864633/230961974-869a25a2-c714-4da6-bd26-c83cba637d0a.png">
+
+
+This is some of the advice/guidance they gave me:
+
+
+<img width="433" alt="Screenshot 2023-04-10 at 1 58 21 PM" src="https://user-images.githubusercontent.com/76864633/230962364-df7966e6-7c75-4d19-8795-9e21c1428b24.png">
+
+
+<img width="435" alt="Screenshot 2023-04-10 at 1 58 47 PM" src="https://user-images.githubuser![Uploading Screenshot 2023-04-10 at 1.59.56 PM.png…]()
+content.com/76864633/230962450-4f374caf-6be0-498e-a2d2-233f7f19e6e7.png">
+
+<img width="686" alt="Screenshot 2023-04-10 at 2 00 34 PM" src="https://user-images.githubusercontent.com/76864633/230962797-5281fd03-a0af-4bf4-8002-13816e5d4096.png">
+
+
+The key concepts I've gathered from their input is to:
+
+- *Know how to use SQL clauses:*
+      - SELECT
+      - FROM
+      - WHERE
+      - GROUP BY
+      - HAVING
+      - ORDER BY    
+- *Know the difference between Joins:*
+      - INNER JOIN
+      - LEFT JOIN (also known as LEFT OUTER JOIN)
+      - RIGHT JOIN (also known as RIGHT OUTER JOIN)
+      - FULL OUTER JOIN (also known as FULL JOIN or FULL OUTER JOIN)
+      - CROSS JOIN (also known as CARTESIAN JOIN or CROSS PRODUCT)
+- Know how to use group by to get sums, counts and find duplicate
+- **Focus learning SQL  more than NoSQL because they have the ability to query NoSQL databases using SQL syntax*
+- **Be someone that can learn to learn and learn in teams*
+
+
+
+## 04/10/2023
+
+Today, I spent time deciding how I would shape the next couple of weeks of the semester
+
+I know that I have 3 more steps to complete this project. They are: 
+
+- Comparing the preformance between the 2 housing databases (NoSQL vs SQL)
+- Conducting an Explorartory Data Analysis (EDA) on the housing information the Realtor provided me
+- Creating 2 data science models (predicitive and classification) from the realtors data
+
+What I need to hone in on is **Comparing the preformance between the 2 housing databases (NoSQL vs SQL)**. I have a pretty good idea on how to do the last two steps of my project but, when it comes to using Jmeter and deciding to test preformance of databases, I have no idea how to tackle this new concept.
+
+After researching I have decided this:
+
+I can compare:
+
+- **Query speeds**: I can use this part of my project to really become familiar with the concepts that travelers workers recommended me in 4/8/23. For example, I can run a simple query that will give me all the homes from east hartford who where built after 2005 that are ordered by price. I can also include this queries to give me a count of all the houses aswell. 
+
+- **Insertion speed**: I can create python code that will create mock housing data that I can insert into both of these databases. I can test the speed the insertion speeds by inserting a large number of records at once (e.g., 1,000 records) and measure how long it takes for the database to complete the operation.
+
+- **Update speed**: I can compare the speed at which your databases can update existing records. For example, I can test how long it takes for each database to update the price of a specific set of properties.
+
+- **Scalability**: I can test how well each database scales as the size of the database grows. I can do this by adding more records to the database and measuring how query speed and insertion speed change as the size of the database increases.
+
+Something I considered testing is the preformance of the database depending on the amount of users it has. This is called **load testing** in Jmeter.
+
+It's used to simulate multiple users or concurrent requests hitting the database at the same time to measure the system's behavior under various loads.
+
+
+
+
+
