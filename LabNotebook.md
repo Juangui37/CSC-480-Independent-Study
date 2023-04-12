@@ -552,6 +552,13 @@ Something I considered testing is the preformance of the database depending on t
 It's used to simulate multiple users or concurrent requests hitting the database at the same time to measure the system's behavior under various loads.
 
 
+## 04/12/2023
 
+I spent the morning practicing how to write queries on MySQL and MongoDB.... I can definetly write queries much faster and effeciently on MySQL. 
 
+You can follow along and see what I've practice on my "SQL/NoSQL Practice Queries Word Document in my Database Folder.
+
+I will be practicing this today to show a live demo in class of what I've learned.
+
+I will also spend the day creating my powerpoint for this class around 1:30pm.
 
