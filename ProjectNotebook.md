@@ -588,4 +588,31 @@ Once I get results, I will post them, then I will rerun these preformance test's
 
 I will run 4 multi-thread tests.
 
-10, 100, 1,000 , and 100,000 concurrent users 
+10, 100, 1,000 , and 100,000 concurrent users
+
+I will post 8 images: 
+
+4 results from each database (MYSQL & MONGO). Both results will have all 11 queries, the only difference will be the amount of conccurent users (Multi-thread). For showing purpose, I will not go over 5 concurrent users so that you can see the full screen.
+
+
+<img width="445" alt="Screenshot 2023-04-17 at 4 53 21 PM" src="https://user-images.githubusercontent.com/76864633/232608288-2034b7a3-b15d-4a77-af2b-cb46dab2bd6f.png">
+
+
+<img width="1068" alt="Screenshot 2023-04-17 at 5 02 08 PM" src="https://user-images.githubusercontent.com/76864633/232610099-4bacf271-405f-4621-bcfb-2679a425e8fc.png">
+
+
+
+
+<img width="449" alt="Screenshot 2023-04-17 at 5 03 19 PM" src="https://user-images.githubusercontent.com/76864633/232610309-b95fabce-2d72-41cd-ae7c-29eed53906e0.png">
+
+<img width="986" alt="Screenshot 2023-04-17 at 5 03 39 PM" src="https://user-images.githubusercontent.com/76864633/232610376-9bf8af8c-d622-494b-b20d-e0aa3fd0b88f.png">
+
+
+
+
+
+
+
+
+
+
