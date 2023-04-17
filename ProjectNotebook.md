@@ -562,3 +562,30 @@ I will be practicing this today to show a live demo in class of what I've learne
 
 I will also spend the day creating my powerpoint for this class around 1:30pm.
 
+## 04/15/2023
+
+Today, I spent the day choosing 11 questions that I would choose to create SQL statements on. These 11 queries help focus on GETting infromation from the database. These are also queries that would realtors might use to query from their database or what everyday people might look for in a site like zillow. The questions chose are:
+
+1.	Find all the MLSNum in PropertyInfo table with ListPrice greater than $500,000.
+2.	Find all the distinct PropType in PropertyInfo table.
+3.	Find the number of houses with HouseStatus of "For Sale" in PropertyInfo table.
+4.	Find the average ClosePrice for each City in PropertyInfo table.
+5.	Find all the Realtors who have a Listing in the RealtorListing table.
+6.	Find all the Realtors who have a Listing with a ListPrice greater than $500,000.
+7.	Find the total number of houses that each Realtor has in the RealtorListing table.
+8.	Find the number of houses with HouseStatus of "For Sale" in each City in PropertyInfo table.
+9.	Find the average ListPrice for each PropType in PropertyInfo table.
+10.	Find the top 10 most common ListingAgents in the Realtor table
+11.	Find the average ClosePrice for each year a house was built in PropertyInfo table.
+
+If you want to see the query answers, please check out the .sql file in the MySQL & MONGODB folder.
+
+## 04/17/2023
+
+Today, I will run all the 'SELECT' Style queries on JMETER for both MongoDB & MySQL.
+
+Once I get results, I will post them, then I will rerun these preformance test's but with multi-thread's (more than 1 concurrent users) to see how each database preforms when multiple users request the information at once.
+
+I will run 4 multi-thread tests.
+
+10, 100, 1,000 , and 100,000 concurrent users 
