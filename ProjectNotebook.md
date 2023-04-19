@@ -608,10 +608,26 @@ I will post 8 images:
 <img width="986" alt="Screenshot 2023-04-17 at 5 03 39 PM" src="https://user-images.githubusercontent.com/76864633/232610376-9bf8af8c-d622-494b-b20d-e0aa3fd0b88f.png">
 
 
+## 04/18/2023
+
+I spent the night time trying to figure out if I could solve why I couldn't connect MongoDB to JMeter... After consideration, I'm willing to change the platform I'm doing the Performance testing on this project.
+
+## 04/19/2023
+
+I spent the day preparing a powerpoint for my CSC 450 and CSC48 class. After presenting in my Senior research class, I was suggested to use Pymongo & mysql-connector-python (Mongo & MySQL Connector) to connect to my databases via python. After I establish a connection to these  
+
+After researching online, I also found that I can do a more indepth Performance test by using pythons package called "Locust". 
+
+I'm going to spend the time I have before class to look this up and see if I can get this started.
+
+This is what I have so far:
+
+
+![Screenshot 2023-04-19 at 1 58 50 PM (2)](https://user-images.githubusercontent.com/76864633/233164423-935e0348-732d-4d61-bd4e-f4a9470a7d04.png)
 
 
 
-
+![Screenshot 2023-04-19 at 2 14 54 PM (2)](https://user-images.githubusercontent.com/76864633/233164443-1eda4527-5bb6-4974-8052-2984eb6e4273.png)
 
 
 
