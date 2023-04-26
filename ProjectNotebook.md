@@ -629,6 +629,16 @@ This is what I have so far:
 
 ![Screenshot 2023-04-19 at 2 14 54 PM (2)](https://user-images.githubusercontent.com/76864633/233164443-1eda4527-5bb6-4974-8052-2984eb6e4273.png)
 
+## 4/22 - 4/26
+For the past couple of days, I've tried to install the dependencies nessary to connect MongoDB on Jmeter:
 
+- Ive got graddle installed on my computer
+- I've created mutliple graddle projects to install the MongoDB Driver
+- But nothing has gone through
 
+[I've asked a question on stackoverflow to see if someone can help me troubleshoot my problem.](https://stackoverflow.com/questions/76095638/issues-connecting-to-mongodb-using-jmeters-jsr223)
+
+I believe the code I've been given by MongoDB will not help me connect to Mongo and JMeter
+
+Today is Wednesday 4/26 and I'm still trying to install gradle... I try to install the mongodb driver through Maven now.
 
