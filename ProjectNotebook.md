@@ -642,3 +642,61 @@ I believe the code I've been given by MongoDB will not help me connect to Mongo 
 
 Today is Wednesday 4/26 and I'm still trying to install gradle... I try to install the mongodb driver through Maven now.
 
+
+## 4/26 
+
+I got a lot done today. I got a way better understanding of everything.
+
+First, I transitioned from using gradle to download the 3 files I needed:
+
+bson-4.3.4.jar
+mongodb-driver-core-4.3.4.jar
+mongodb-driver-sync-4.3.4.jar
+
+And started to use MAVEN.
+
+I was still using the VS Code IDE to run this 'JAVA Project' and I wasn't getting anywhere. I wasted a ton of hours asking ChatGPT what was wrong with the way I was trying to run and build my jav project and I kept being instructed to fix my path for MAVEN.
+
+Ultimately, around 2:30, I told myself I would give up on this project and my senior research assignment if I couldn't figure out how to download these 3 missing dependicies. 
+
+After looking up a bunch of tutorial, I realized that all of these tutorials where on a java app building IDE.
+
+I have been using a very broad IDE called VS Code.
+
+Not having expierence in JAVA, I avioded downloading a JAVA specific IDE until... I saw this site:
+
+[![Screenshot 2023-04-26 at 11 19 43 PM](https://user-images.githubusercontent.com/76864633/234751112-213e4f5a-99d9-41e9-8088-cef35be8349e.png)](https://www.enterprisedb.com/postgres-tutorials/how-add-postgresql-driver-dependency-maven)
+
+(Click on the image to go to the actual site)
+
+This site essentially shows a tutorial of how to get a PostgreSQL JAVA Driver from Maven. 
+
+What I did was follow that tutorial and download the IDE used in the toturial... [APACHE NetBeans IDE 17](https://www.apache.org/dyn/closer.cgi/netbeans/netbeans-installers/17/Apache-NetBeans-17-bin-macosx.dmg)
+
+After I installed this Java specific IDE, I followed the instructions from the site on the image.
+
+My computer was frozen for crashing because I had used it so much so I deiceded to turn it off until my Honors induction Ceromony.
+
+After my induction, I went to the Student center and met up with Will Pochette. I had already finished all the instructions but, my one issue was finding where my dependicies from my prom.xml file where being stored. 
+
+
+![Screenshot 2023-04-26 at 11 25 09 PM](https://user-images.githubusercontent.com/76864633/234751916-df06a4bb-c265-4f6e-be0c-27afb35d948d.png)
+
+After a couple of minute collaborating with him, he decided to right click on the actual jar files in the depdencidies (circled in right) and there was an option to copy file location... **BRUH**
+
+we clicked copy and pasted it onto my mac's terminal... and would you believe it... it brought us to all 3 files 
+
+![Screenshot 2023-04-26 at 11 28 23 PM](https://user-images.githubusercontent.com/76864633/234752342-252212b5-16a1-48d2-99f2-ae363f38e1f7.png)
+
+
+Now that i knew for sure I had all 3 dependicies installed, I was ready to begin writting groovy code to connect my java driver to Jmeter.
+
+Although I don't know groovy code, MongoDB has this crash course:
+
+[![Screenshot 2023-04-26 at 11 33 01 PM](https://user-images.githubusercontent.com/76864633/234752907-7b66d7b3-332f-431c-acb8-9b65ea6e465a.png)](https://learn.mongodb.com/courses/connecting-to-mongodb-in-java)
+
+
+And it shows a user how to connect their mongodb Atlas DB to a JAVA Application using the MongoDB Java Driver. 
+
+I believe once I spend some time with this course, I will have what I need to **FINALLY** Get results to move onward with this project :) 
+
