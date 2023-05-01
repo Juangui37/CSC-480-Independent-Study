@@ -700,3 +700,46 @@ And it shows a user how to connect their mongodb Atlas DB to a JAVA Application 
 
 I believe once I spend some time with this course, I will have what I need to **FINALLY** Get results to move onward with this project :) 
 
+
+## 4/27 - 5/01
+
+Throughout this time, I have been trying to test the performance for my MongoDB using Jmeter. Up until Friday 4/28, I decided to give up using Jmeter.
+
+Late in the afternoon on thursday I thought I finally established my connectioned using a connection template provided by MongoDB but, after struggling to create succesfully query from my database using JMter,  I went to my friend's Will Pochette's tutoring hours from 1 - 5pm on friday and he told me that the connectioned was indeed a false positive connection. We spent the entire day trying to fix the connection issue but, even with the help of Will, ChatGPT, & Google, we could not find a solution. 
+
+On friday (4/28) after 7pm, I realized that I needed results to hand in my project. I needed to find an alternative way to measure the preformance of my databases. 
+
+I deicded to go with the suggestion originally provided by Dr. Dancik. Connect both databases to python and use a DB preformance testing package from python.
+
+I decided to go back to this solution because **JMeter was fucking me over big time**. 
+
+My MySQL Connection on Python was working perfectly. 
+
+After looking up a tutorial to use Locust, I applied all my queries I wanted to test to my MySQL.ipynb file.
+
+Now came the issue... **Pymongo**
+
+I had established a connection to my mongo database with pytho before this tiem , I was getting this error:
+
+ac-pjzlp1e-shard-00-02.eobads9.mongodb.net:27017: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002),ac-pjzlp1e-shard-00-01.eobads9.mongodb.net:27017: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002),ac-pjzlp1e-shard-00-00.eobads9.mongodb.net:27017: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002), Timeout: 30s, Topology Description: <TopologyDescription id: 644fcc70dae0c7ad4cfccbbc, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-pjzlp1e-shard-00-00.eobads9.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-pjzlp1e-shard-00-00.eobads9.mongodb.net:27017: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)')>, <ServerDescription ('ac-pjzlp1e-shard-00-01.eobads9.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-pjzlp1e-shard-00-01.eobads9.mongodb.net:27017: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)')>, <ServerDescription ('ac-pjzlp1e-shard-00-02.eobads9.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-pjzlp1e-shard-00-02.eobads9.mongodb.net:27017: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)')>]>
+
+After hours and hours of attempting to troubleshoot this error, I could not find a solution. Not until Monday, 05/01/2023. I finally decided to stop trying to troubleshoot this error through ChatGPt because I was going through a rabbit whole of nothingness.
+
+I went on google and looked up:
+
+Pymongo SSL error and was brought to this documentation page:
+
+https://pymongo.readthedocs.io/en/stable/examples/tls.html 
+
+I eddited my connection string to include the "tls=True,
+                             tlsAllowInvalidCertificates=True" Code and after .5 seconds I finally got my beautiful "Pinged your deployment. You successfully connected to MongoDB!" Message on VSCode.
+
+client = pymongo.MongoClient('example.com',
+                             tls=True,
+                             tlsAllowInvalidCertificates=True)
+                             
+                             
+                             
+ I had an issue with python, jupyter notebooks, homebrew, and my pip installer because I accidentally had to clear my nano .zshrc file. 
+ 
+I had a lot of "Path" realted content in that nano .zshrc file and I believe that is the reason why this error occured.
