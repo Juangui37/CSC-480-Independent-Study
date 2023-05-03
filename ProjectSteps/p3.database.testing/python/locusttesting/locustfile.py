@@ -13,7 +13,7 @@ class MySQLUser(HttpUser):
         self.mydb = mysql.connector.connect(
             host="localhost",
             user="admin",
-            password="Pacho1414+++",
+            password="Password",
             database="housing"
         )
         self.mycursor = self.mydb.cursor()
