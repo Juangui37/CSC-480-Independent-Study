@@ -71,7 +71,7 @@ public class MongoClientConnectionExample {
 	    private static final Logger log = LogManager.getLogger(TestPlanPreProcessor());
     public static void main(String[] args) {
         // Replace the placeholder with your Atlas connection string
-        String uri = &quot;mongodb+srv://juangui37:Pacho1414@juansproject.sksxvtv.mongodb.net/?retryWrites=true&amp;w=majority&quot;;
+        String uri = <MongoString>;;
 
         // Construct a ServerApi instance using the ServerApi.builder() method
         ServerApi serverApi = ServerApi.builder()
