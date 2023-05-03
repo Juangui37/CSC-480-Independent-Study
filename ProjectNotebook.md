@@ -743,3 +743,30 @@ client = pymongo.MongoClient('example.com',
  I had an issue with python, jupyter notebooks, homebrew, and my pip installer because I accidentally had to clear my nano .zshrc file. 
  
 I had a lot of "Path" realted content in that nano .zshrc file and I believe that is the reason why this error occured.
+
+## 05/01/2023 05/03/2023
+
+After spending almost 24 hours on a computer, I can pretty much say, I have fufilled all the requirements of my project. 
+
+I'm talking about the OG Indepdent Study Plan:
+
+
+![Screenshot 2023-05-03 at 2 06 16 AM](https://user-images.githubusercontent.com/76864633/235842870-aa92a400-81ca-4d37-8f6c-2e51918574f8.png)
+
+
+Although, I didn't finish to the best of my ability. I finished.
+
+
+Over the past 48 hours, I gave up on trying to use locust.io to conduct my performance tests and just used the python package on both the databases.
+
+From here, I opened up a new Jupyner Notebook where I conducted the comparisons between the databases.
+*Unfortunately, I wasn't able to do a multi-threaded test*
+
+After that, I created 2 new notebooks, To export .csv data from both databases. I created a query and a noSQL query that combined all the tables/collections into one big collection/table with all the information I need. Looking back at it now, I didn't really need the mock Agent Data nor the Agent data in general but, you live and learn. Once I got this file from both databases, I began to coduct a detailed EDA. I used ChatGPT to make the most pretty visualizations I could make. I did my analysis and tried to do themachine learning model on python but, I was getting too many errors.
+
+My friend Will suggested I use -my first love- R to do the model building and boy oh boy have i misssed R. 
+
+I have used R in such a long time... it was almost foreighn using it at first.
+
+I wnt back to my Sophomore year nd junior year directories that has my MAT 342 & MAT 343 assignments and copied and pasted some R code to get the desired results for my CART & Regression model. I have completed everything thus far. I just need to create a powerpoint demonstrating everything I've done and I'll be good to go :)
+
