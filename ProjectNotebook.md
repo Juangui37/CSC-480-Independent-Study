@@ -629,6 +629,144 @@ This is what I have so far:
 
 ![Screenshot 2023-04-19 at 2 14 54 PM (2)](https://user-images.githubusercontent.com/76864633/233164443-1eda4527-5bb6-4974-8052-2984eb6e4273.png)
 
+## 4/22 - 4/26
+For the past couple of days, I've tried to install the dependencies nessary to connect MongoDB on Jmeter:
+
+- Ive got graddle installed on my computer
+- I've created mutliple graddle projects to install the MongoDB Driver
+- But nothing has gone through
+
+[I've asked a question on stackoverflow to see if someone can help me troubleshoot my problem.](https://stackoverflow.com/questions/76095638/issues-connecting-to-mongodb-using-jmeters-jsr223)
+
+I believe the code I've been given by MongoDB will not help me connect to Mongo and JMeter
+
+Today is Wednesday 4/26 and I'm still trying to install gradle... I try to install the mongodb driver through Maven now.
 
 
+## 4/26 
+
+I got a lot done today. I got a way better understanding of everything.
+
+First, I transitioned from using gradle to download the 3 files I needed:
+
+bson-4.3.4.jar
+mongodb-driver-core-4.3.4.jar
+mongodb-driver-sync-4.3.4.jar
+
+And started to use MAVEN.
+
+I was still using the VS Code IDE to run this 'JAVA Project' and I wasn't getting anywhere. I wasted a ton of hours asking ChatGPT what was wrong with the way I was trying to run and build my jav project and I kept being instructed to fix my path for MAVEN.
+
+Ultimately, around 2:30, I told myself I would give up on this project and my senior research assignment if I couldn't figure out how to download these 3 missing dependicies. 
+
+After looking up a bunch of tutorial, I realized that all of these tutorials where on a java app building IDE.
+
+I have been using a very broad IDE called VS Code.
+
+Not having expierence in JAVA, I avioded downloading a JAVA specific IDE until... I saw this site:
+
+[![Screenshot 2023-04-26 at 11 19 43 PM](https://user-images.githubusercontent.com/76864633/234751112-213e4f5a-99d9-41e9-8088-cef35be8349e.png)](https://www.enterprisedb.com/postgres-tutorials/how-add-postgresql-driver-dependency-maven)
+
+(Click on the image to go to the actual site)
+
+This site essentially shows a tutorial of how to get a PostgreSQL JAVA Driver from Maven. 
+
+What I did was follow that tutorial and download the IDE used in the toturial... [APACHE NetBeans IDE 17](https://www.apache.org/dyn/closer.cgi/netbeans/netbeans-installers/17/Apache-NetBeans-17-bin-macosx.dmg)
+
+After I installed this Java specific IDE, I followed the instructions from the site on the image.
+
+My computer was frozen for crashing because I had used it so much so I deiceded to turn it off until my Honors induction Ceromony.
+
+After my induction, I went to the Student center and met up with Will Pochette. I had already finished all the instructions but, my one issue was finding where my dependicies from my prom.xml file where being stored. 
+
+
+![Screenshot 2023-04-26 at 11 25 09 PM](https://user-images.githubusercontent.com/76864633/234751916-df06a4bb-c265-4f6e-be0c-27afb35d948d.png)
+
+After a couple of minute collaborating with him, he decided to right click on the actual jar files in the depdencidies (circled in right) and there was an option to copy file location... **BRUH**
+
+we clicked copy and pasted it onto my mac's terminal... and would you believe it... it brought us to all 3 files 
+
+![Screenshot 2023-04-26 at 11 28 23 PM](https://user-images.githubusercontent.com/76864633/234752342-252212b5-16a1-48d2-99f2-ae363f38e1f7.png)
+
+
+Now that i knew for sure I had all 3 dependicies installed, I was ready to begin writting groovy code to connect my java driver to Jmeter.
+
+Although I don't know groovy code, MongoDB has this crash course:
+
+[![Screenshot 2023-04-26 at 11 33 01 PM](https://user-images.githubusercontent.com/76864633/234752907-7b66d7b3-332f-431c-acb8-9b65ea6e465a.png)](https://learn.mongodb.com/courses/connecting-to-mongodb-in-java)
+
+
+And it shows a user how to connect their mongodb Atlas DB to a JAVA Application using the MongoDB Java Driver. 
+
+I believe once I spend some time with this course, I will have what I need to **FINALLY** Get results to move onward with this project :) 
+
+
+## 4/27 - 5/01
+
+Throughout this time, I have been trying to test the performance for my MongoDB using Jmeter. Up until Friday 4/28, I decided to give up using Jmeter.
+
+Late in the afternoon on thursday I thought I finally established my connectioned using a connection template provided by MongoDB but, after struggling to create succesfully query from my database using JMter,  I went to my friend's Will Pochette's tutoring hours from 1 - 5pm on friday and he told me that the connectioned was indeed a false positive connection. We spent the entire day trying to fix the connection issue but, even with the help of Will, ChatGPT, & Google, we could not find a solution. 
+
+On friday (4/28) after 7pm, I realized that I needed results to hand in my project. I needed to find an alternative way to measure the preformance of my databases. 
+
+I deicded to go with the suggestion originally provided by Dr. Dancik. Connect both databases to python and use a DB preformance testing package from python.
+
+I decided to go back to this solution because **JMeter was fucking me over big time**. 
+
+My MySQL Connection on Python was working perfectly. 
+
+After looking up a tutorial to use Locust, I applied all my queries I wanted to test to my MySQL.ipynb file.
+
+Now came the issue... **Pymongo**
+
+I had established a connection to my mongo database with pytho before this tiem , I was getting this error:
+
+ac-pjzlp1e-shard-00-02.eobads9.mongodb.net:27017: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002),ac-pjzlp1e-shard-00-01.eobads9.mongodb.net:27017: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002),ac-pjzlp1e-shard-00-00.eobads9.mongodb.net:27017: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002), Timeout: 30s, Topology Description: <TopologyDescription id: 644fcc70dae0c7ad4cfccbbc, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-pjzlp1e-shard-00-00.eobads9.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-pjzlp1e-shard-00-00.eobads9.mongodb.net:27017: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)')>, <ServerDescription ('ac-pjzlp1e-shard-00-01.eobads9.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-pjzlp1e-shard-00-01.eobads9.mongodb.net:27017: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)')>, <ServerDescription ('ac-pjzlp1e-shard-00-02.eobads9.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-pjzlp1e-shard-00-02.eobads9.mongodb.net:27017: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)')>]>
+
+After hours and hours of attempting to troubleshoot this error, I could not find a solution. Not until Monday, 05/01/2023. I finally decided to stop trying to troubleshoot this error through ChatGPt because I was going through a rabbit whole of nothingness.
+
+I went on google and looked up:
+
+Pymongo SSL error and was brought to this documentation page:
+
+https://pymongo.readthedocs.io/en/stable/examples/tls.html 
+
+I eddited my connection string to include the "tls=True,
+                             tlsAllowInvalidCertificates=True" Code and after .5 seconds I finally got my beautiful "Pinged your deployment. You successfully connected to MongoDB!" Message on VSCode.
+
+client = pymongo.MongoClient('example.com',
+                             tls=True,
+                             tlsAllowInvalidCertificates=True)
+                             
+                             
+                             
+ I had an issue with python, jupyter notebooks, homebrew, and my pip installer because I accidentally had to clear my nano .zshrc file. 
+ 
+I had a lot of "Path" realted content in that nano .zshrc file and I believe that is the reason why this error occured.
+
+## 05/01/2023 05/03/2023
+
+After spending almost 24 hours on a computer, I can pretty much say, I have fufilled all the requirements of my project. 
+
+I'm talking about the OG Indepdent Study Plan:
+
+
+![Screenshot 2023-05-03 at 2 06 16 AM](https://user-images.githubusercontent.com/76864633/235842870-aa92a400-81ca-4d37-8f6c-2e51918574f8.png)
+
+
+Although, I didn't finish to the best of my ability. I finished.
+
+
+Over the past 48 hours, I gave up on trying to use locust.io to conduct my performance tests and just used the python package on both the databases.
+
+From here, I opened up a new Jupyner Notebook where I conducted the comparisons between the databases.
+*Unfortunately, I wasn't able to do a multi-threaded test*
+
+After that, I created 2 new notebooks, To export .csv data from both databases. I created a query and a noSQL query that combined all the tables/collections into one big collection/table with all the information I need. Looking back at it now, I didn't really need the mock Agent Data nor the Agent data in general but, you live and learn. Once I got this file from both databases, I began to coduct a detailed EDA. I used ChatGPT to make the most pretty visualizations I could make. I did my analysis and tried to do themachine learning model on python but, I was getting too many errors.
+
+My friend Will suggested I use -my first love- R to do the model building and boy oh boy have i misssed R. 
+
+I have used R in such a long time... it was almost foreighn using it at first.
+
+I wnt back to my Sophomore year nd junior year directories that has my MAT 342 & MAT 343 assignments and copied and pasted some R code to get the desired results for my CART & Regression model. I have completed everything thus far. I just need to create a powerpoint demonstrating everything I've done and I'll be good to go :)
 
