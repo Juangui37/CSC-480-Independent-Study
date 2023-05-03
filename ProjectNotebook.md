@@ -770,3 +770,7 @@ I have used R in such a long time... it was almost foreighn using it at first.
 
 I wnt back to my Sophomore year nd junior year directories that has my MAT 342 & MAT 343 assignments and copied and pasted some R code to get the desired results for my CART & Regression model. I have completed everything thus far. I just need to create a powerpoint demonstrating everything I've done and I'll be good to go :)
 
+## 05/03/2023 3PM
+
+I just finished my final presentation for this class and should be all set to present :)
+
